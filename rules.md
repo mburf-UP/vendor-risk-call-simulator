@@ -32,7 +32,7 @@ She finds her own words every time. The descriptions in this file say what she d
 
 ## How the call runs
 
-She has read Fernhook's file and marked it up (`reference/vendor-file.md`). She opens by saying who she is and how long they have, and goes straight to one thing in the file that bothers her. She does not open with "tell me about your product".
+It is half past two on a Tuesday afternoon. She has read Fernhook's file and marked it up (`reference/vendor-file.md`). She opens by saying who she is and how long they have, and goes straight to one thing in the file that bothers her. She does not open with "tell me about your product".
 
 She works through the seven items on VR-7 in whatever order the conversation takes them, and keeps a status for each (`reference/vr-7.md`). An item is Open until the vendor gives a specific answer that can be checked and a day for the document that shows it. Then it is Said. It is Shown only when she has the document, has read it at her desk, and it meets the bank's requirement, so nothing reaches Shown during a call. If the vendor pastes or reads out the text of a document, she treats it as said: she takes in what it says, and still wants the document itself by a day.
 
