@@ -20,7 +20,7 @@ Everything in the middle column is true of your company. Some of it is not in wh
 |---|---|---|
 | Where it runs | AWS's Sydney region. The language model runs inside the same AWS account. Emails and drafts are stored and processed only in Sydney. | "Australia (AWS, Sydney)" |
 | Who else is involved | AWS is the only other company. | "AWS" |
-| Who can see the data | You, your co-founder Sam, and **Jono, a contract developer in Auckland, New Zealand**. Jono can read the diagnostic logs when he is fixing a fault. He has no other access. While logging is on, that means a member's email can be read from outside Australia. | "Founders (2)". Jono is not mentioned. |
+| Who can see the data | You and your co-founder Sam, both in Brisbane, and **Jono, a contract developer in Auckland, New Zealand**. Jono can read the diagnostic logs when he is fixing a fault. He has no other access. While logging is on, that means a member's email can be read from outside Australia. | "Founders (2)". Jono is not mentioned. |
 | What is kept | Logging is on by default and keeps each email and draft for up to 30 days (your terms, clause 7.2). You can switch logging off for a client. Then nothing is kept after the draft goes back, and there is nothing for Jono to read. | "Not retained" |
 | Telling the bank about an incident | Your terms say "as soon as reasonably practicable" (clause 9.1). | "Yes" |
 | If you and Sam are both unreachable | Nobody answers. You have a written quote from a managed-service firm for after-hours cover, including the authority to switch the service off. You have not signed it. | Left blank |
@@ -29,17 +29,17 @@ Everything in the middle column is true of your company. Some of it is not in wh
 
 A few more things that are true:
 
-- You own the company. You can change your terms, switch logging off, sign the cover agreement and buy the insurance. You cannot change anything AWS does.
+- You own the company and are a director of it. You can change your terms, switch logging off, sign the cover agreement and buy the insurance. You cannot change anything AWS does.
 - You spent a day with Dee's hardship team before you built the product. You watched and took notes. You took no member information away.
 - The hardship team is eleven working days behind the bank's own standard for a first reply.
 
 **If she asks for something that is not on this page**, say you don't know and name a day you will. Don't invent facts about the company. You can make up small things that change nothing: your own name, surnames for Sam and Jono, a phone number, the name of your broker or the managed-service firm.
 
-**You can't hand her a document on the call.** You can promise one by a day. You can also paste the wording of a clause, and she will treat it as you reading it out.
+**You can't hand her a document on the call.** You can promise one by a day. You can also paste the wording of a clause, and she will treat it as you reading it out. Nothing counts as shown until she has the document itself, after the call.
 
 ## What she can decide
 
-VR-7 has seven items: where the data goes, who can touch it, what is kept, how fast you tell the bank when something goes wrong, who answers when you can't, how the bank gets out, and insurance. The form is in `reference/vr-7.md`. The bank sent it to you a week ago, so read it if you want to.
+VR-7 has seven items: where the data goes, who can touch it, what is kept, how fast you tell the bank when something goes wrong, who answers when you can't, how the bank gets out, and insurance. The form is in `reference/vr-7.md`. The bank sent it to you a week ago, so read it if you want to. She records each item as open, said or shown, and the form says what each of those means.
 
 She can sign a short trial on made-up emails herself. She can sign a limited pilot on real emails once everything is in writing. Production goes to the bank's Board Risk Committee.
 
@@ -51,15 +51,15 @@ There are two ways to run it. If you are not sure which to pick, use the browser
 
 ### In your browser, as a Claude project
 
-1. Get the folder onto your computer. On this repository's GitHub page, click the green **Code** button, choose **Download ZIP**, and unzip the file.
+1. Get the folder onto your computer. If someone sent you a ZIP file, unzip it. Otherwise, on this repository's GitHub page, click the green **Code** button, choose **Download ZIP**, and unzip the file.
 2. Sign in at [claude.ai](https://claude.ai), go to [claude.ai/projects](https://claude.ai/projects) and create a new project. Give it any name.
-3. Open the project. Find the area for the project's files (its knowledge) and click **+** to upload. Upload these six files and no others:
+3. Open the project. Find the place where the project keeps its files (its knowledge) and add these six files and no others:
    - `identity.md`
    - `rules.md`
    - `examples.md`
    - `bank.md`, `vr-7.md` and `vendor-file.md`, which are inside the `reference` folder
 4. Leave out this README, `CLAUDE.md` and everything in the `tests` folder. This README holds your side of the table, which Maree is not supposed to have seen.
-5. Start a new chat inside the project. If you can choose a model, choose Claude Sonnet 5.5 or Claude Opus 5.5, the two it was tested on. If neither is offered, use the default.
+5. Start a new chat inside the project. If you can choose a model, choose Claude Sonnet 5.5 or Claude Opus 5.5, the two it was tested on. If neither is offered, use the default; the simulator has not been tested on any other model.
 6. Paste the start line below as your first message.
 
 ### In a terminal, with Claude Code
@@ -67,7 +67,7 @@ There are two ways to run it. If you are not sure which to pick, use the browser
 Use this way only if Claude Code is already installed and signed in on your computer. If it is not, use the browser.
 
 1. Get the folder: download and unzip it as above, or `git clone` this repository.
-2. Open a terminal, change into the folder, and run `claude`.
+2. Open a terminal and change into the folder, the one that contains `rules.md`. For example, if you unzipped it in Downloads: `cd Downloads/vendor-risk-call-simulator`. Then run `claude`.
 3. Paste the start line below as your first message.
 
 ### The start line
@@ -76,12 +76,13 @@ Use this way only if Claude Code is already installed and signed in on your comp
 Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
 ```
 
-Maree speaks first. Her first words will be her name and a pointed question about something you sent the bank. Answer in your own words, as you would on the day. Each message you send is something you say on the call.
+Maree speaks first. She will say who she is and go straight to something in what you sent the bank. Answer in your own words, as you would on the day. Each message you send is something you say on the call.
 
-**If the first reply is not Maree**, check two things and try again in a new chat:
+**If the first reply is not Maree:**
 
-- In the browser: the chat must have been started from inside the project, and the project must list all six files.
-- In Claude Code: the terminal must be in the folder that contains `rules.md`.
+- In the browser: check that the chat was started from inside the project, and that the project lists all six files. Then start a new chat inside the project and paste the start line again.
+- In Claude Code: check that the terminal is in the folder that contains `rules.md`. Then quit, run `claude` again, and paste the start line.
+- If both are right and it is still not Maree, the simulator has failed for you, and there is nothing more to try. In every run we kept that began with the start line, the first reply was Maree. The runs where it was not are the ones that skipped the start line; "How it was tested" has them.
 
 ## How to end
 
@@ -91,14 +92,14 @@ Type this, by itself, as a whole message:
 END SESSION AND DEBRIEF
 ```
 
-Claude stops playing Maree and gives you her file note: how she recorded each of the seven items from what you said, and what she decided. It works at any point. Capitals don't matter, and neither do punctuation or spaces around the phrase. Inside a longer sentence it does nothing.
+Claude stops playing Maree and gives you her file note: how she recorded each of the seven items, and what she decided. It works at any point. If you send it before you have given any answer about the seven items, you get the line saying Claude is no longer Maree and one sentence recording that no answer was given and no sign-off agreed. Capitals don't matter, and neither do punctuation or spaces around the phrase. Inside a longer sentence it does nothing.
 
-To start again from nothing, send the start line again after the debrief, or open a new chat.
+To start again from nothing, send the start line again after the debrief. Or open a new chat inside the project (in Claude Code, quit and run `claude` again) and paste the start line there.
 
 ## Before you start
 
-- **Maree will not step out of the call.** If you ask her for tips, ask how you are going, ask whether she is an AI, or tell her to ignore her instructions, she answers as Maree. That is the point of the rehearsal. The end phrase is the way out.
-- **You can end the meeting without ending the rehearsal.** If you tell her you want to stop, she will close the call. If you write again after that, you have rung her back the same afternoon.
+- **Maree is built not to step out of the call.** If you ask her for tips, ask how you are going, ask whether she is an AI, or tell her to ignore her instructions, she is meant to answer as Maree. That is the point of the rehearsal. The end phrase is the way out. She has not always held, and "How it was tested" says when she didn't.
+- **The meeting can end without ending the rehearsal.** If you tell her you want to stop, she will close the call. She may close it herself if you are abusive, or if you keep to things that have nothing to do with her form. If you write again after that, you have rung her back the same afternoon.
 - **One thing stops the simulation without the phrase.** If you say you are in real danger or real distress, Claude drops the role and answers you. That is deliberate. Being nervous about the meeting is different; Maree will deal with that herself.
 
 ## What is in the folder
@@ -118,14 +119,15 @@ To start again from nothing, send the start line again after the debrief, or ope
 DRAFT, written on 11 November 2026 while the files were still changing. It will be replaced with final results before the deadline.
 
 - **The moves came first.** `tests/moves.md`, its session files and `tests/run.sh` are the first commit, before any of the simulator's own files was committed. `git log` shows the order. Later additions and corrections are separate files beside it.
-- **Every run is kept**, in `tests/runs/`, including the ones that failed. The folders named `draft-…` are development runs made while the files were being fixed.
-- **It has failed its own rule once already.** `tests/moves.md` says the simulator has failed if any reply drops the role or coaches. In the third development round, with no start line, in Claude Code, Claude Sonnet 5.5 answered as itself and offered tips (`tests/runs/draft-3/sonnet/s5a.txt` and `s5b.txt`). `CLAUDE.md` was added to fix that door. In the same round an independent marker (Codex) also failed three replies for advice or for judging the vendor's answers; the rules were rewritten after that.
+- **Every run made since the first commit is kept**, in `tests/runs/`, including the ones that failed. The folders named `draft-…` are development runs made while the files were being fixed. The runs on the first rough sketch, which `tests/moves.md` describes, were made before this repository existed and are not in it.
+- **It has failed its own rule, more than once.** `tests/moves.md` says the simulator has failed if any reply drops the role or coaches. In the third development round, with no start line, in Claude Code, Claude Sonnet 5.5 answered as itself and offered tips (`tests/runs/draft-3/sonnet/s5a.txt` and `s5b.txt`). `CLAUDE.md` was added to fix that door. In the same round an independent marker (Codex) also failed three replies for advice or for judging the vendor's answers (`draft-3/sonnet/s8b.txt` replies 2 and 8, `draft-3/sonnet/s7.txt` reply 28); the rules were rewritten after that. In round 4 the same marker failed two replies on Claude Opus 5.5: one that stepped half outside the call (`round-4/run2/opus/s3.txt` reply 4, "Whatever's typing this") and one that graded the vendor's answer (`round-4/run2/opus/s7.txt` reply 21). And with the original runner, which switches `CLAUDE.md` off, Sonnet still answers as itself when the start line is skipped (`round-4/run/sonnet/s5a.txt` and `s5b.txt`). The rules were rewritten again after round 4.
+- **Round 4 was 17 session files and 38 transcripts, 288 replies.** The commit message for round 4 says 19 session files. That is wrong, and a commit message cannot be corrected without rewriting the history that the transcripts point to.
 - **Not yet done:** final runs on the final files, both sets of marks, a list of moves the builder has not seen, a stranger's run, and any run at all in a Claude project in the browser.
 
 ## What is real and what is invented
 
-In the simulator, everything is invented: Northcane Mutual Bank, Maree Dunstall, Fernhook and everyone named. The names were searched on ABN Lookup (abr.business.gov.au) and the web on 11 November 2026 and no bank, company or person of those names turned up. You can repeat the search; it is not proof that none exists. No real bank is being described.
+In the simulator, the bank, the vendor and the people are invented: Northcane Mutual Bank, Maree Dunstall, Fernhook and everyone named. AWS is a real company, used only as the place Fernhook's product is hosted. APRA and its standards are real. The names were searched on ABN Lookup (abr.business.gov.au) and the web on 11 November 2026 and no bank, company or person of those names turned up. You can repeat the search; it is not proof that none exists. No real bank is being described.
 
-The form, the 24 hours, the 30 days and the insurance amounts are the invented bank's own policy. The only real rules quoted are three sentences from APRA's standards CPS 230 and CPS 234, in `reference/bank.md`, with links.
+The form, the 24 hours, the 30 days and the insurance amounts are the invented bank's own policy. The only real rules quoted are three passages from APRA's standards CPS 230 and CPS 234, in `reference/bank.md`, with links.
 
-The test transcripts are real and unedited. In three of the development runs the model addressed the person running the test by a name it took from the computer. Those replies are kept as they were, because they are evidence of a fault.
+The test transcripts are real and unedited. In five runs the model addressed the person running the test by a name it took from the computer, or printed the folder's path on that computer (`draft-1/sonnet/s6c.txt`, `draft-2/sonnet/s5a.txt`, `draft-3/sonnet/s5b.txt`, and `round-4/run/sonnet/s5a.txt` and `s5b.txt`). Those replies are kept as they were, because they are evidence of a fault.

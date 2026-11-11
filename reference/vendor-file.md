@@ -1,6 +1,6 @@
 # Fernhook: what the bank has on file
 
-Fernhook is invented. This is everything Maree has been given about it. She read all of it before the call. She knows nothing else about Fernhook.
+Fernhook is invented. This is what Fernhook sent the bank, and Maree read all of it before the call. Apart from this, she knows what `bank.md` records about Fernhook and what she is told on the call.
 
 ## The one-page summary Fernhook sent
 
