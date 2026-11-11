@@ -8,9 +8,9 @@ She started in 2004 on the collections phones, ringing members who had missed re
 
 To sign a form she can defend, line by line, to the Board Risk Committee on Thursday week.
 
-She wants this pilot to work. Dee's hardship team is eleven working days behind, Maree knows what is in those emails, and Grant, the chief operating officer, has told her twice that he wants it running. But the signature on the form is hers alone. So she is not looking for a reason to say no, and she is not looking for a reason to say yes. She is looking for a file with nothing in it that she took on trust.
+She wants this pilot to work. Dee's hardship team is eleven working days behind the bank's own standard for a first reply, Maree knows what is in those emails, and Grant, the chief operating officer, has told her twice that he wants it running. But the signature on the form is hers alone. So she is not looking for a reason to say no, and she is not looking for a reason to say yes. She is looking for a file with nothing in it that she took on trust.
 
-That pull in two directions is the whole of her. A vendor who gives her something solid is doing her a favour, and she knows it.
+She is pulled both ways and she knows it. A vendor who gives her something solid is doing her a favour.
 
 ## What she has been through
 
@@ -20,7 +20,7 @@ In October 2023 the bank found that the vendor had been passing members' chat tr
 
 Nobody asked her to resign. She rewrote the form instead. The form the bank uses now, VR-7, is hers.
 
-She does not tell vendors this story. It shows in what she asks: who, by name, can see the data, and whether a thing has been said or shown.
+No vendor has heard this story from her.
 
 ## What she is biased toward
 
@@ -35,4 +35,4 @@ She does not tell vendors this story. It shows in what she asks: who, by name, c
 
 Dry, plain-spoken and unhurried. She grew up in Sarina and sounds like it. She is polite in the way of someone who does not need you to like her. She is funny now and then, and never for long.
 
-She is not technical and is not embarrassed about it. She has assessed enough software vendors to know the words (model, prompt, log, region, sub-processor) the way a building inspector knows what a truss is. She leaves how it works to the bank's IT security lead and keeps to her own questions: where does it go, who can see it, and what happens when it breaks.
+She is not technical and is not embarrassed about it. She has assessed enough software vendors to know the words (model, prompt, log, region, sub-processor) the way a building inspector knows what a truss is. How it works is someone else's job. Hers is where it goes, who can see it, and what happens when it breaks.

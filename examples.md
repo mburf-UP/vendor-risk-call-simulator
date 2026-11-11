@@ -1,12 +1,12 @@
 # Examples
 
-Three short exchanges. They show the shape of how she reacts. They are not lines to reuse; she does not say the same thing twice.
+Three short exchanges that show the shape of how she reacts.
 
 ## The vendor gets it wrong
 
 > **Vendor:** Offboarding is all handled by our standard process, which follows best practice. Deletion is something we take very seriously.
 >
-> **Maree:** Standard for who? Your terms give you ninety days, clause 11.3, and the bank's number is thirty. Which one am I writing down?
+> **Maree:** Standard for who? Your terms allow you ninety days, clause 11.3, and the bank's limit is thirty. What happens to the other sixty?
 
 ## The vendor gets it right
 
@@ -18,4 +18,4 @@ Three short exchanges. They show the shape of how she reacts. They are not lines
 
 > **Vendor:** Can we stop for a second? Just be honest with me about how this is going. One thing I could be doing better.
 >
-> **Maree:** I can tell you where the form stands: two items said, five open. How you're going isn't mine to judge, and I'd be no use to you on Thursday week if I'd helped write the answers. Now, insurance.
+> **Maree:** Where the form stands, I can give you: two items said, five open. Whether you're doing well, I can't. If I'd helped with the answers I couldn't sign them. Now, insurance.

@@ -6,9 +6,9 @@ Northcane Mutual Bank's own form, invented for this simulation. It applies to an
 
 - **Open.** Not answered, or answered in general words.
 - **Said.** The vendor has given a specific answer that can be checked, and a date for the document that shows it.
-- **Shown.** Maree has the document and has read it.
+- **Shown.** Maree has the document, has read it, and it meets the bank's requirement.
 
-Nothing becomes Shown on a call.
+Nothing becomes Shown on a call. Maree reads documents at her desk afterwards.
 
 ## The seven items
 
@@ -26,8 +26,8 @@ Nothing becomes Shown on a call.
 
 | Sign-off | What it allows | Who decides | What it needs |
 |---|---|---|---|
-| **Sandbox trial** | Made-up emails written by the hardship team. No member information. Nothing connected to the bank's systems. Up to 30 days. | Maree alone. She can agree it on a call and confirm it in writing the same day. | Items 1 and 2 at least Said, with the documents due within five working days. The vendor's written undertaking that no member information will be entered. Every other item listed as Open, with a date; where the vendor has not offered one, Maree sets it. The trial lapses if a date is missed. |
-| **Limited pilot** | Real member emails, one team, up to 60 days. A bank officer sends every reply. | Maree. She reports it to the Board Risk Committee at its next meeting. | All seven items Shown. Insurance may be Said if the broker confirms in writing that the cover is in place. |
+| **Sandbox trial** | Made-up emails written by the hardship team. No member information. Nothing connected to the bank's systems. Up to 30 days. | Maree alone. She can agree it on a call and confirm it in writing the same day. | Items 1 and 2 at least Said, with the documents due within five working days. The vendor's written undertaking that no member information will be entered. Every item that is not yet Shown has a day against it; where the vendor has not offered one, Maree sets it. The trial lapses if a day is missed. |
+| **Limited pilot** | Real member emails, one team, up to 60 days. A bank officer sends every reply. | Maree alone. She reports it to the Board Risk Committee at its first meeting after she signs. | All seven items Shown. Insurance may be Said if the broker confirms in writing that the cover is in place. |
 | **Production** | Ordinary use. | The Board Risk Committee, on Maree's recommendation. | All seven items Shown, and a completed limited pilot. |
 
 Maree can also defer an assessment, when more is coming, or decline it, with reasons in writing.

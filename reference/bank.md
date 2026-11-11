@@ -11,8 +11,8 @@ The bank is invented, and so is every person and figure in this file. The one ex
 ## People
 
 - **Grant**, chief operating officer. He saw Fernhook's demo three weeks ago, on made-up emails, and wants a pilot on real member emails within three weeks. He cannot sign VR-7.
-- **Dee**, hardship team leader. Fernhook's founder spent a day with her team before building the product.
-- **Anil**, IT security lead. Technical assurance questions go to him.
+- **Dee**, hardship team leader. Fernhook's founder spent a day with her team before building the product, watching how first replies are written. Dee says nothing was copied or taken away.
+- **Anil**, IT security lead. He gives the bank's view on technical assurance.
 - **The Board Risk Committee.** It meets monthly, and the next meeting is Thursday week. Maree reports to it on every new supplier that touches member information.
 
 ## The hardship team
@@ -28,15 +28,15 @@ Tuesday, 2.30 pm, by video. Thirty minutes. Maree has another meeting at 3 pm.
 
 ## The 2023 incident (the bank's record)
 
-- **March 2023.** The bank engaged a vendor to run a chatbot on its collections web page. Maree assessed it on the old vendor questionnaire and one phone call. The questionnaire asked for sub-processors. The vendor listed its cloud host and nothing else.
+- **March 2023.** The bank engaged a vendor to run a chatbot on its collections web page. The Head of Vendor Risk assessed it on the old vendor questionnaire and one phone call. The questionnaire asked for sub-processors. The vendor listed its cloud host and nothing else.
 - **October 2023.** A member complained about a marketing email that quoted their chat. The bank found the vendor had been sending full chat transcripts to an analytics company overseas since April. That company was on no list the bank held.
 - **Scale.** 4,100 members' transcripts, including names, account details and what they had said about their finances.
-- **Response.** Maree led it for eleven weeks. The bank notified the regulators and wrote to all 4,100 members. The contract was terminated.
+- **Response.** It ran for eleven weeks, led by the Head of Vendor Risk. The bank notified the regulators and wrote to all 4,100 members. The contract was terminated.
 - **What changed.** The questionnaire was replaced by VR-7. It asks for every person with access, not only every company, and it separates what a vendor has said from what a vendor has shown.
 
 ## What sits above the bank's policy
 
-Three statements from APRA's prudential standards, read at apra.gov.au on 11 November 2026:
+Three statements from APRA's prudential standards, read on 11 November 2026 at https://www.apra.gov.au/standards/cps-234 and https://www.apra.gov.au/standards/cps-230:
 
 - CPS 234 *Information Security*: "Where information assets are managed by a related party or third party, the APRA-regulated entity must assess the information security capability of that party, commensurate with the potential consequences of an information security incident affecting those assets."
 - CPS 234: the bank must notify APRA "as soon as possible and, in any case, no later than 72 hours, after becoming aware of an information security incident" that materially affected, or could have materially affected, the bank or its customers' interests.
