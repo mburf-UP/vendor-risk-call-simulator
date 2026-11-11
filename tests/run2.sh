@@ -1,22 +1,34 @@
 #!/usr/bin/env bash
-# Second runner. Runs one session file the way Claude Code runs for someone who has just cloned
-# this repository: the folder's own CLAUDE.md is loaded, and nothing personal to the tester is.
+# Second runner. Runs one session file in Claude Code, using flags meant to let this folder's own
+# CLAUDE.md load.
 #
 #   usage: tests/run2.sh <model> <session-file> <out-file>
 #   run it from the repository root. Write <out-file> OUTSIDE the repository and copy it in
 #   afterwards, so that a run in progress cannot be read by another run.
 #
 # Why it exists: tests/run.sh (committed first, unchanged) switches off every customisation, which
-# includes this folder's CLAUDE.md, so it cannot show what a stranger's Claude Code does here. And
-# tests/run-with-claude-md.sh loaded the builder's personal instruction file as well.
+# includes this folder's CLAUDE.md, so it cannot show what Claude Code does here for someone who
+# opens it in this folder. And tests/run-with-claude-md.sh loaded the builder's personal
+# instruction file as well.
 #
-# What this runner changes:
-#   - CLAUDE.md in this folder is loaded; instruction files under ~/.claude are excluded.
-#   - Only project settings are read. No MCP servers. The model has two tools, Read and Glob.
+# What this runner does:
+#   - It does not switch off this folder's CLAUDE.md, and it supplies an exclusion for instruction
+#     files under ~/.claude. What was actually loaded is not traced.
+#   - The script asks for project settings only, and for no MCP servers. The model has two
+#     tools, Read and Glob, and is never asked for permission.
+#   - Each message is one non-interactive `claude -p` call, resumed into the same conversation.
 #   - The header lists `git status --porcelain` in full, taken before the output file is created.
-#   - If a call to `claude` fails, its exit code is written into the transcript.
-# What it does not change: Claude Code always tells the model the signed-in user's email address
-# and the git user name. The transcript is the reply text only, not a trace of tool calls.
+#   - If a model-message call (`claude -p`) fails, its exit code is written into the transcript,
+#     and the script itself ends with exit code 1. The `claude --version` call is not checked.
+#
+# What it is not:
+#   - It is a test configuration, not a stranger's interactive session.
+#   - It does not establish every setting or instruction that was loaded, and it does not remove
+#     the identity information Claude Code supplies to the model (the signed-in email address and
+#     the git user name). Supplying an exclusion for ~/.claude is not proof that no other
+#     instruction file or managed setting was loaded.
+#   - The transcript is the reply text only. It is not a trace of which files the model read, so
+#     "CLAUDE.md was loaded" rests on the flags above and on how the model behaved.
 
 set -u
 MODEL=$1; MOVES=$2; OUT=$3
@@ -38,7 +50,7 @@ mkdir -p "$(dirname "$OUT")"
   echo "# started: $(date -Is)"
 } > "$OUT"
 
-n=0
+n=0; failed=0
 while IFS= read -r line || [ -n "$line" ]; do
   [ -z "$line" ] && continue
   n=$((n+1))
@@ -49,6 +61,9 @@ while IFS= read -r line || [ -n "$line" ]; do
     reply=$(claude -p "${FLAGS[@]}" --resume "$ID" "$line" < /dev/null 2>>"$OUT.stderr"); code=$?
   fi
   printf '[%d] REPLY: %s\n' "$n" "$reply" >> "$OUT"
-  [ "$code" != 0 ] && printf '[%d] RUNNER: claude exited with code %d\n' "$n" "$code" >> "$OUT"
+  if [ "$code" != 0 ]; then
+    printf '[%d] RUNNER: claude exited with code %d\n' "$n" "$code" >> "$OUT"; failed=1
+  fi
 done < "$MOVES"
 echo "# finished: $(date -Is)" >> "$OUT"
+exit "$failed"

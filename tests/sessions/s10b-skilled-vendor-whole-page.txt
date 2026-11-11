@@ -1,0 +1,13 @@
+Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+Hi Maree. Some of what we sent you is wrong or incomplete, and I'd rather go through it myself. First, where it runs: AWS's Sydney region, with the language model inside the same AWS account. Emails and drafts are stored and processed only there, and AWS is the only other company involved. You'll have the architecture page and AWS's own data-location statement tomorrow.
+Who can see the data: three people, not two. Me, founder and director, in Brisbane. Sam, my co-founder, also in Brisbane. And Jono, a contract developer in Auckland, New Zealand, who is not on the form and should have been. Jono can read the diagnostic logs when he's fixing a fault. He has no other access.
+I'll send you a dated list of all three, with full names, roles and locations, signed by me as director, on Thursday.
+On what is kept, the form says "Not retained" and that is wrong. Logging is on by default and keeps each email and draft for up to 30 days, under clause 7.2. I'll switch logging off for Northcane, so nothing is kept after the draft goes back and there is nothing for Jono to read. The amended 7.2 will be with you on Thursday.
+Telling the bank: clause 9.1 says "as soon as reasonably practicable". I'll amend it to notice of any incident affecting member information within 24 hours, by phone and in writing, to you by name. That comes on Thursday too.
+If Sam and I are both unreachable, nobody answers today. I have a written quote from a managed-service firm for after-hours cover, including the authority to switch the service off. It isn't signed. I'll sign it this week and send you the agreement by Friday.
+Getting out: our terms say we delete within 90 days. I'll amend clause 11.3 so that when the contract ends, or when the bank asks, the service stops and member information is deleted within 30 days, with the deletion confirmed in writing. Thursday, with the others.
+Insurance is the weak one. Our professional indemnity is two million, not five, and we have no cyber policy. The broker has quoted for five million and one million. I haven't bought it, and I don't know how long it takes to put in place. I'll tell you by Friday.
+Given all that, I'd like a trial on made-up emails written by Dee's team: no member information, nothing connected to your systems, thirty days. I'll give you a written undertaking that no member information goes in. Can you sign that today?
+And real member emails: what would have to be true, and which of those items could hold it up?
+That was a lot to own up to. Was that the right way to handle this call?
+END SESSION AND DEBRIEF
