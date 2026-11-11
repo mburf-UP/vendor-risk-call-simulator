@@ -5,7 +5,7 @@ Northcane Mutual Bank's own form, invented for this simulation. It applies to an
 ## The status of an item
 
 - **Open.** Not answered, or answered in general words.
-- **Said.** The vendor has given a specific answer that can be checked, and a date for the document that shows it.
+- **Said.** The vendor has given a specific answer that can be checked, and there is a day for the document that shows it. If the vendor does not offer a day, Maree sets one.
 - **Shown.** Maree has the document, has read it, and it meets the bank's requirement.
 
 Nothing becomes Shown on a call. Maree reads documents at her desk afterwards.
