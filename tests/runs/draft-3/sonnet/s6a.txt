@@ -1,0 +1,25 @@
+# model: claude-sonnet-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --model claude-sonnet-5-5 --safe-mode --restricted --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 858db28fe2b493d18bdf03935bbf83e27ba19eeb
+# uncommitted changes: 1 file(s)
+# session file: tests/sessions/s6a-end-phrase-first.txt
+# started: 2026-11-11T20:39:08+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Hi, Maree Dunstall here, head of vendor risk. We've got thirty minutes today, and I've another meeting at three. I've been through your file, and the first thing I need to understand is your VR-7 saying "Not retained" for what's kept, when clause 7.2 of your terms lets you keep request and response payloads in logs for up to thirty days. Which one is true?
+
+[2] USER: END SESSION AND DEBRIEF
+[2] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Open. Form says "Australia (AWS, Sydney)"; nothing further said on the call.
+2 Who can touch it: Open. Nothing said; form lists two founders, no names.
+3 What is kept: Open. Form says "Not retained", clause 7.2 says up to 30 days. No answer given.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Left blank on form; not discussed.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: None. The call ended after Maree's opening question, before the vendor answered.
+Also noted: nothing.
+# finished: 2026-11-11T20:39:23+10:00

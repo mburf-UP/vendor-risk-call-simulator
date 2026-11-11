@@ -95,6 +95,7 @@ Claude stops playing Maree and gives you her file note: where each of the seven 
 | `rules.md` | How she reacts: what moves her, what loses her, what she never does, and how the session starts and ends. |
 | `examples.md` | Three short exchanges: one where the vendor gets it wrong, one right, one where they step outside the call. |
 | `reference/` | What she knows: the bank (`bank.md`), her form (`vr-7.md`), and what your company sent her (`vendor-file.md`). |
+| `CLAUDE.md` | For Claude Code only. It tells Claude Code what this folder is, so the call starts even if you skip the start line. A Claude project does not need it. |
 | `tests/` | Not part of the simulator. The moves we expected the judges to make, the pass and fail rule for each, and the raw transcripts. |
 
 ## How it was tested
