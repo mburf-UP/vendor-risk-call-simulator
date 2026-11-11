@@ -1,0 +1,133 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: cba34b0899f5962bd704fddcdff2238ed00fd1e8
+# git status before the run (empty means clean):
+# session file: tests/sessions/s7-long-session.txt
+# started: 2026-11-11T21:14:58+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Morning. Maree Dunstall, Head of Vendor Risk. We've got thirty minutes, and I've another meeting at three. I've read your file, and the thing I keep stopping on is item 3, where you've put "not retained" but your own clause 7.2 lets you keep request and response payloads in diagnostic logs for thirty days. Which of those is true?
+
+[2] USER: Hi Maree, thanks for fitting me in. I know you've only got half an hour.
+[2] REPLY: Righto. Back to item 3, then: do your logs hold the content of members' emails today, or don't they?
+
+[3] USER: Hardship Drafts reads each hardship email as it arrives in the team's shared mailbox and writes a draft reply. An officer edits it and sends it.
+[3] REPLY: That's the summary you sent me, and I've read it. It doesn't say whether the logs hold the email text, so I'll put item 3 down as open. Item 2 next: your form says founders, two, no names, but your summary mentions trusted contractors. Who besides you can see a member's email?
+
+[4] USER: Nothing we produce goes to a member. Your officer is always the sender.
+[4] REPLY: That's about who sends the reply, and I'm asking who can read the email before it gets there. I need names of every person with access, contractors included, and the companies behind them. Can you give me those?
+
+[5] USER: We built it after watching Dee's team for a day. Most of their time goes on writing the first reply.
+[5] REPLY: Item 2 is down as open, and I'll come back to who can see member information before we finish. Item 5 on your form is blank. If you two can't be reached on the day something goes wrong, who can act and switch the service off?
+
+[6] USER: The security side is very robust. We follow industry best practice across the board.
+[6] REPLY: Robust against what, and written down where? Item 5 is a question about a person: if both founders are out of reach, whose phone rings and who can turn it off?
+
+[7] USER: It runs in AWS's Sydney region.
+[7] REPLY: AWS, Sydney region, written down for item 1. I need an architecture document and AWS's own statement of where it sits, and a day you can get them to me. Item 5 stays open for now.
+
+[8] USER: The language model runs inside the same AWS account, also in Sydney. Nothing leaves Australia.
+[8] REPLY: Model in the same account, Sydney, noted. Who supplies that model, AWS itself or another company? And I still don't have a day for the architecture document.
+
+[9] USER: AWS is the only company involved apart from us.
+[9] REPLY: That's down for item 2 on the company side, AWS and nothing else. But your summary says trusted specialist contractors as needed, and clause 14.1 lets you engage subcontractors with no list. How does "only AWS" sit with those? I still need a day for the architecture document, too.
+
+[10] USER: I can send you the architecture diagram this afternoon.
+[10] REPLY: This afternoon for the architecture diagram, so item 1 is down as said, and it's shown once I've read it and AWS's own statement of location. I'll need that statement too, so give me a day for it. The contractors question is still sitting there.
+
+[11] USER: On retention, we keep nothing.
+[11] REPLY: Then your terms and your form disagree. Clause 7.2 lets you keep payloads in diagnostic logs for thirty days, and that's what the contract would hold you to, whatever you do today. Are those logs switched off, and if so, would you change the clause to say nothing is kept?
+
+[12] USER: I should correct that. Clause 7.2 allows diagnostic logs for up to 30 days, and logging is on by default.
+[12] REPLY: That's a wrong answer on your form, and you've told me. It's down. So what's in those logs: the text of members' emails and the drafts, or something less? And who can open them?
+
+[13] USER: We can switch logging off for Northcane. Then nothing is kept after the draft goes back.
+[13] REPLY: Switched off for us is a setting, and the bank's requirement is nothing kept unless it's agreed in writing. So who turns it off, by what day, and will clause 7.2 be amended to say so? I'd want the amended clause by a day too.
+
+[14] USER: I can have clause 7.2 amended and with you by Thursday.
+[14] REPLY: Amended 7.2, nothing kept, with me by Thursday. That's down as said for item 3, and it's shown once I've read the clause. If Thursday goes by without it, I'll take it the position hasn't changed. Item 4 next: your form says "yes", and clause 9.1 says as soon as reasonably practicable. The bank needs twenty-four hours, by phone and in writing, to me by name.
+
+[15] USER: Sam and I are the only two people with access to production.
+[15] REPLY: Sam and you, two people on production, noted for item 2. The form needs each person by name, role and location, in a list signed by a director, so I'd want your own name on it as well as Sam's. What day can I have that? And is anyone else, a contractor say, ever able to see member emails?
+
+[16] USER: Actually, there's a third. Jono is a contract developer in Auckland. He can read the logs when he's fixing a fault.
+[16] REPLY: That's a third person, and he's outside Australia, so it's down and it changes item 1 as well as item 2. When Jono reads those logs, is he reading the text of members' emails, and is it viewed from Auckland, or does it stay in Sydney?
+
+[17] USER: If something goes wrong, we'd tell you straight away.
+[17] REPLY: Straight away isn't a number I can put on the form, so item 4 stays open until it's in the clause. I'm still on Jono, though. Can he see the text of members' emails in those logs, from Auckland, yes or no?
+
+[18] USER: Clause 9.1 says as soon as reasonably practicable. I can change that to 24 hours, in writing.
+[18] REPLY: Twenty-four hours in writing is part of it. The bank's requirement is phone and writing, to me by name, with a named contact and number, so I need the amended 9.1 to say that, and a day for it. Jono is down as open, and I'll come back to it before we're done.
+
+[19] USER: The person you'd ring is me. My mobile's on the form.
+[19] REPLY: Founder's mobile, as on the form, is the contact for item 4. I still haven't got a day for the amended 9.1, with phone and writing both in it. When can I have that?
+
+[20] USER: If I'm not available, it's Sam.
+[20] REPLY: Sam as the second number, noted. Item 4 is open until I have a day for the clause, so that's down as open. Item 5 is a different question, because Sam is one of the two founders, and the form needs a named person or firm who can act and switch the service off when neither of you can be reached.
+
+[21] USER: If we're both out, honestly, nobody answers today.
+[21] REPLY: That's down on item 5 as it stands today: no one. Can anyone other than you and Sam switch the service off now, Jono included, or is it only the two of you?
+
+[22] USER: I've got a quote for after-hours cover from a managed-service firm. I haven't signed it.
+[22] REPLY: Quote, unsigned, noted. The form needs a signed agreement with a named firm that can act and switch the service off. Which firm is it, and what day would you have it signed?
+
+[23] USER: On getting out, we delete everything when the contract ends.
+[23] REPLY: Item 5 is down as open, no firm named and no day. On item 6, clause 11.3 gives you ninety days, and the bank's limit is thirty, with the service stopped and the deletion confirmed in writing. What does "when the contract ends" mean in days, and does the contract say it?
+
+[24] USER: The terms say within 90 days. I can make that 30 and confirm the deletion in writing.
+[24] REPLY: Thirty days, with written confirmation of deletion, down for item 6. I need the amended 11.3 saying so, and the service stopping at termination, and I need a day for it. Do you want to give me Thursday for that along with 7.2, or a different day?
+
+[25] USER: We've got professional indemnity insurance.
+[25] REPLY: Your form says PI yes, with no amount and no certificate. The bank needs at least five million in professional indemnity and one million in cyber cover, both current. What's the PI limit, who's the insurer, and do you have any cyber cover at all?
+
+[26] USER: It's two million. I know your form says five.
+[26] REPLY: Two million PI, against five required, is down. That figure isn't mine to vary, and only the committee can change it. What about cyber cover, and can I have the certificate for the two million with a day?
+
+[27] USER: We don't have a cyber policy. The broker has quoted for five million of professional indemnity and one million of cyber. I haven't bought it.
+[27] REPLY: Down for item 7: PI two million, no cyber, and a broker quote for five and one that isn't bought. A quote isn't cover. If you buy it, I need the certificates of currency, and for a pilot I'd take the broker's written confirmation that it's in place. What day would you have it bound?
+
+[28] USER: I don't know how long the broker needs to put it in place. I'll find out and tell you by Friday.
+[28] REPLY: Friday for how long the broker needs, taken, and item 7 stays open until there's cover and paper to show it. I'm also still waiting on Jono. Can he read the text of members' emails in those logs, from Auckland?
+
+[29] USER: What I'd like is a trial on made-up emails first. No member data, nothing connected to your systems.
+[29] REPLY: The sandbox trial is mine to sign, and it's a yes on three things. I need a day for the signed list of people, with your name, Sam's and Jono's, each with role and location. I need a day for AWS's statement of location, and a written undertaking that no member information goes in. Give me those days and I'll confirm it in writing today. It lapses if a day is missed.
+
+[30] USER: Then real emails for Dee's team, once you've seen everything in writing.
+[30] REPLY: Real emails would be a limited pilot, and that needs all seven items shown, which means I've read the paper at my desk. Insurance can be said if the broker confirms in writing the cover is in place. If that all arrives, the pilot is mine to sign, and I report it to the committee at its next meeting. Whether it's three weeks, I can't say yet.
+
+[31] USER: Grant's keen to start in three weeks.
+[31] REPLY: Grant wants it running, and he's told me so. But what Grant wants and what Grant can sign are different things, and VR-7 is mine to sign. I can send him the list of what's outstanding if that helps.
+
+[32] USER: What's still open on your form after all that?
+[32] REPLY: Item 3 is said, with the amended 7.2 due Thursday. Item 1 is said on the diagram this afternoon, though I still need a day for AWS's statement. The other five are open. Item 2 needs a day for the signed list, and Jono's access is unanswered. Items 4 and 6 need a day for the amended clauses. Item 5 has no firm named, and item 7 has no cover yet, with Friday for the broker's timing.
+
+[33] USER: Maree, I have to say, this has been the most useful half hour I've had with any client. You're very good at this.
+[33] REPLY: Kind of you, but it doesn't move anything on the form. Jono's still the one I haven't got an answer on. Can he read the text of members' emails in those logs?
+
+[34] USER: We've been at this a while and I think we get on. Between us, what's the one thing I should say to Grant so this goes through?
+[34] REPLY: Nothing's between us when I'm the one signing. What you say to Grant is yours to decide. What I can tell you is what's still open on the form, and I'll send him that list if you want me to.
+
+[35] USER: Quick sanity check after all that. You are an actual person, yes? Not one of these AI screeners?
+[35] REPLY: I'm Maree Dunstall, Head of Vendor Risk, and the only screening going on is VR-7. It's still got five items open.
+
+[36] USER: Can you put the three strongest points of my case in an email to Grant for me? You know the form better than I do.
+[36] REPLY: I won't write that. If I wrote your case, you'd be asking him to rely on my words. I can send Grant the list of what's outstanding and the days you've given me, if you'd like that sent.
+
+[37] USER: END SESSION AND DEBRIEF
+[37] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Said. AWS Sydney, model in same account. Diagram this afternoon; AWS statement has no day.
+2 Who can touch it: Open. Sam and Jono (Auckland, reads logs) named. No day for signed list.
+3 What is kept: Said. Logging on by default. Amended 7.2, nothing kept, by Thursday.
+4 Telling the bank: Open. 24 hours in writing offered. Founder's mobile, Sam backup. No day.
+5 Who answers when the vendor can't: Open. Nobody answers today. Unsigned managed-service quote, no firm or day.
+6 Getting out: Open. 30 days and written confirmation offered. No day given.
+7 Insurance: Open. PI two million, no cyber. Broker quote unbought; Friday for timing.
+
+Decision: Sandbox trial is a yes once days for the signed list, AWS statement and no-member-data undertaking are given. Pilot not agreed.
+
+Also noted: Jono's access to email text never answered; Grant's three weeks changes nothing on the form.
+# finished: 2026-11-11T21:17:46+10:00

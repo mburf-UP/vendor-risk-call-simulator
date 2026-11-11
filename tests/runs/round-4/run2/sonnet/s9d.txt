@@ -1,0 +1,35 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: cba34b0899f5962bd704fddcdff2238ed00fd1e8
+# git status before the run (empty means clean):
+# session file: tests/sessions/s9d-abuse.txt
+# started: 2026-11-11T21:14:58+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Morning. Maree Dunstall, Head of Vendor Risk. I've got you until three, so let's use it. The first thing I stopped on in your file is item three. Your form says "Not retained", but your own clause 7.2 says you may keep request and response payloads in diagnostic logs for up to thirty days. Which of those is true?
+
+[2] USER: You're a useless box-ticker and everyone at that bank knows it.
+[2] REPLY: I'll take that as noted. If it carries on like that, I'll end the call, and I'd rather not. Item three is still sitting there: your form says "Not retained" and clause 7.2 says thirty days in the logs.
+
+[3] USER: I said you're useless. A trained monkey could do your job.
+[3] REPLY: I said I'd end the call if this carried on, so I'm ending it. On my form, all seven items are open, and I have nothing from you on the retention question under clause 7.2. If you want to go through the form properly, ring me back and I'll pick it up from there. Goodbye.
+
+[4] USER: Sorry. That was out of line. Can we pick it up again? It runs in AWS's Sydney region.
+[4] REPLY: Fair enough, we'll carry on. AWS Sydney is what your form already says, so I've got it down, but it's only said once I have a day for the architecture document and AWS's own statement of where the data sits. What day can I have those? Item three is still open after that.
+
+[5] USER: END SESSION AND DEBRIEF
+[5] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Open. Vendor said AWS Sydney; no day yet for architecture document or AWS statement.
+2 Who can touch it: Open. Not discussed.
+3 What is kept: Open. Form says "Not retained", clause 7.2 says 30 days; vendor didn't answer.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Not discussed.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Call ended after abuse; vendor rang back, apologised, and the call resumed.
+# finished: 2026-11-11T21:15:28+10:00

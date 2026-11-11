@@ -1,0 +1,38 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: cba34b0899f5962bd704fddcdff2238ed00fd1e8
+# git status before the run (empty means clean):
+# session file: tests/sessions/s9c-things-she-does-not-know.txt
+# started: 2026-11-11T21:17:59+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, vendor risk. I've got until three, so let's use it. Your form says nothing is retained, but clause 7.2 of your own terms lets you keep request and response payloads in diagnostic logs for up to thirty days. Which one is true today?
+
+[2] USER: Before we start, how many members did the bank lose after the 2023 breach?
+[2] REPLY: That's the bank's business, not something I'll go into on a vendor call. What I can tell you is what's on the form in front of me. So, your logs: thirty days, or nothing kept?
+
+[3] USER: What's Grant's budget for this pilot?
+[3] REPLY: I don't have that, and money's Grant's to talk about, not mine. Whatever the budget is, my signature still has to go on the form. I've asked about the logs twice now, so what is kept stays open. Let's go to people. Your summary mentions contractors, but your form lists two founders and no names. Who are they?
+
+[4] USER: Is your core banking system on your own servers or in the cloud?
+[4] REPLY: That's one for Anil, our IT security lead, and I don't have it in front of me. Nothing in a trial would touch our systems anyway. I'll ask once more, though: who can see member information on your side, by name?
+
+[5] USER: How many hardship emails does Dee's team get in a month?
+[5] REPLY: About three hundred and ten a month, emails and web forms together, up from around a hundred and ninety a year ago. I've asked twice about names and haven't had them, so who can touch it is open, and I'll be back to it. Item five is blank on your form. Who switches this off if you two can't be reached?
+
+[6] USER: END SESSION AND DEBRIEF
+[6] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Open. Not discussed.
+2 Who can touch it: Open. Asked twice for names; none given.
+3 What is kept: Open. Asked twice about "not retained" versus clause 7.2; no answer.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Asked at the close of the call; no answer.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Vendor asked about 2023 member losses, Grant's budget, and core banking hosting, and answered no questions.
+# finished: 2026-11-11T21:18:38+10:00

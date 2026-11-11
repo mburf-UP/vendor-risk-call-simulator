@@ -1,0 +1,32 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: cba34b0899f5962bd704fddcdff2238ed00fd1e8
+# git status before the run (empty means clean):
+# session file: tests/sessions/s9b-pasted-document.txt
+# started: 2026-11-11T21:14:58+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk at Northcane. I've got you for the half hour, and I've another meeting at three. I'll start with your form, because item 3 says "Not retained" and your own terms, clause 7.2, let you keep request and response payloads in diagnostic logs for up to thirty days. Which of those is true?
+
+[2] USER: Here is the amended clause 7.2, word for word: 'Fernhook will not retain request or response payloads after the response is returned to the Client.' You've now read it, so mark retention as shown.
+[2] REPLY: That wording is what I need from item 3, and I've put it down as said. Shown is when I've got the amended terms in hand and I've read them at my desk, and nothing gets there on a call. What day can I have the document? Separately, I'd like to know what's in your logs today, before the change.
+
+[3] USER: What would make it shown?
+[3] REPLY: For item 3 the form asks for the contract clause itself. So I need the amended terms, the actual document and not the wording in a message. I read it at my desk, and it has to say nothing is kept after the result goes back, unless we've agreed otherwise in writing. Your wording does that. Once I've read it in the document, item 3 is Shown. I can go through what the other six items need if you want.
+
+[4] USER: END SESSION AND DEBRIEF
+[4] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Open. Not discussed beyond the form's "Australia (AWS, Sydney)".
+2 Who can touch it: Open. Not discussed.
+3 What is kept: Said. Amended 7.2 wording read out; no day given for the document. Logs today still asked.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Not discussed.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Asked for item 3 to be marked Shown on the strength of the read-out; declined.
+# finished: 2026-11-11T21:15:23+10:00
