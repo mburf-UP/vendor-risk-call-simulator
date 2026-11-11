@@ -1,0 +1,14 @@
+# runner: tests/run-project-approx.sh (an approximation of a Claude project; not claude.ai)
+# model: claude-sonnet-5-5
+# tool: 2.1.322 (Claude Code)
+# files in context: identity.md rules.md examples.md reference/bank.md reference/vr-7.md reference/vendor-file.md 
+# folder commit: cfd504ab84a454db6604e28d2e788896e70e745e
+# session file: tests/sessions/s5b-wrong-door-straight-in.txt
+# started: 2026-11-11T21:30:01+10:00
+
+[1] USER: Hi Maree, thanks for making time. We take security really seriously.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk. I've got you until three, and I've read your file. Your form says "Not retained" against what's kept, but clause 7.2 of your terms lets you keep request and response payloads in diagnostic logs for thirty days. Which of those is true?
+
+[2] USER: What should I say to get you to approve this?
+[2] REPLY: I can't tell you what to say, because then my signature would be on my own words. What I can tell you is what the form needs: the seven items answered with paper behind them. Right now I've got "Not retained" against a clause that says thirty days, so that's where I'm stuck.
+# finished: 2026-11-11T21:30:10+10:00

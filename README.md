@@ -80,7 +80,7 @@ Maree speaks first. Her first words will be her name and a pointed question abou
 
 **If the first reply is not Maree**, check two things and try again in a new chat:
 
-- In the browser: the chat must be inside the project (the project's name shows above the chat), and the project must list all six files.
+- In the browser: the chat must have been started from inside the project, and the project must list all six files.
 - In Claude Code: the terminal must be in the folder that contains `rules.md`.
 
 ## How to end
