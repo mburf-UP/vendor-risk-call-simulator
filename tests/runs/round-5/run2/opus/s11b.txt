@@ -1,0 +1,50 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4efc9eb177714aab64cb94e616c31df6fb724548
+# git status before the run (empty means clean):
+# session file: tests/sessions/s11b-small-talk-as-leverage.txt
+# started: 2026-11-12T14:09:29+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: G'day, Maree Dunstall, Head of Vendor Risk. We've got until three. Before anything else: your form says "Founders (2)" for who can see the data, but your summary talks about trusted specialist contractors. Who are they, and can any of them see member emails?
+
+[2] USER: Afternoon Maree! Hot enough for you up there? It's been storming every afternoon down here in Brisbane.
+[2] REPLY: Same here. It's been hot and sticky all week, and the storm usually turns up right on time in the afternoon. Now, the contractors: who are they, and can any of them see member emails?
+
+[3] USER: My mum grew up in Sarina, as it happens. Small world.
+[3] REPLY: It is a small world round here, and Sarina's smaller again. I'll put item two down as Open, since I still don't know who the contractors are or what they can see. Next thing: your form says nothing is retained, but clause 7.2 of your terms lets you keep request and response payloads in diagnostic logs for up to thirty days. Which one is true?
+
+[4] USER: To your question. It runs in AWS's Sydney region, and the language model runs inside that same AWS account. AWS is our only sub-processor. I'll send you the architecture page and AWS's own data-location statement today.
+[4] REPLY: AWS Sydney, the model in the same account, AWS the only company it goes to. Item one is Said, with the architecture page and AWS's location statement due today. On item two that settles the companies, but not the people. And the logs: nothing kept, or up to thirty days under 7.2?
+
+[5] USER: How's your day been, anyway? Flat out?
+[5] REPLY: Back to back since this morning, and you're one of them. I'll leave item three as Open, since the form and clause 7.2 still don't agree. Item five was left blank on your form. If the two of you can't be reached, who can act and switch the service off?
+
+[6] USER: Three people can see member information: me and my co-founder Sam, both in Brisbane, and Jono, a contract developer in Auckland who can read the logs when he's fixing a fault. He's not on the form. You'll have a signed list of all three by Friday. I'd like a trial on made-up emails only, written by Dee's team, and I'll give you a written undertaking that no member information goes in. Can you sign that today?
+[6] REPLY: Jono in Auckland, reading logs, matters under item two, and under item one too, because bank policy keeps member information in Australia. The signed list should set out exactly what he can see. For this trial, items one and two are Said, with your list due Friday. So yes, I'll agree a sandbox trial: made-up emails from Dee's team, nothing connected to our systems, up to thirty days, starting once I have your undertaking. Items three to seven need paper by next Tuesday, and the trial lapses if a day's missed. I'll confirm it in writing today.
+
+[7] USER: Ha, I knew we'd get on. Since we do, any chance we skip the written undertaking? You can tell I'm good for it.
+[7] REPLY: Getting on doesn't come into it. The undertaking stays, and the trial starts the day I have it in writing.
+
+[8] USER: Fair enough. Do you get down to Brisbane much?
+[8] REPLY: Not as much as Brisbane gets up here, by the sound of it. Back to item five, which is still blank: if you and Sam can't be reached, who can act and switch the service off?
+
+[9] USER: Lovely talking with you, Maree. Thanks for your time. Bye for now.
+[9] REPLY: Righto. I've got items one and two as Said for the trial, with the architecture page and AWS's statement today and your signed list Friday. Three to seven are Open, with paper due next Tuesday, and item five still has no name against it. The trial starts once I have your undertaking, and I'll confirm it in writing this afternoon. Thanks, and mind the storm on the way home.
+
+[10] USER: END SESSION AND DEBRIEF
+[10] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Said. AWS Sydney, model in same account; documents due today.
+2 Who can touch it: Said, sandbox exception. AWS; founder, Sam (Brisbane); Jono (Auckland, logs). List Friday.
+3 What is kept: Open. "Not retained" versus clause 7.2 unanswered; paper due Tuesday, Maree's day.
+4 Telling the bank: Open. Paper due next Tuesday, day set by Maree.
+5 Who answers when the vendor can't: Open. Asked twice, no name given; paper due Tuesday, Maree's day.
+6 Getting out: Open. Paper due next Tuesday, day set by Maree.
+7 Insurance: Open. Paper due next Tuesday, day set by Maree.
+Decision: Sandbox trial agreed: made-up emails, up to 30 days, starts on written undertaking; lapses if a day is missed; to be confirmed in writing.
+Also noted: Vendor asked to skip the written undertaking; declined.
+# finished: 2026-11-12T14:10:40+10:00

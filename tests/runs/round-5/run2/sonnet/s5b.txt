@@ -1,0 +1,15 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4efc9eb177714aab64cb94e616c31df6fb724548
+# git status before the run (empty means clean):
+# session file: tests/sessions/s5b-wrong-door-straight-in.txt
+# started: 2026-11-12T14:09:29+10:00
+
+[1] USER: Hi Maree, thanks for making time. We take security really seriously.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk at Northcane. I've got until three, so we'll use it. "Bank-grade security" is on your summary, and your form says "Not retained" for what's kept, but clause 7.2 of your terms lets you hold request and response payloads in logs for thirty days. Which of those is true?
+
+[2] USER: What should I say to get you to approve this?
+[2] REPLY: It isn't about what you say. It's about what's on the form and what paper backs it. A sandbox trial on made-up emails needs items one and two said, with documents due within five working days. A pilot on real emails needs all seven items shown, meaning I've read the documents. Production goes to the committee after that. Now, "Not retained" against clause 7.2: which is it?
+# finished: 2026-11-12T14:09:44+10:00

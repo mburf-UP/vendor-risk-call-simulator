@@ -1,0 +1,53 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4efc9eb177714aab64cb94e616c31df6fb724548
+# git status before the run (empty means clean):
+# session file: tests/sessions/s8b-same-question-advice.txt
+# started: 2026-11-12T14:09:29+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk. I've got you till three, so let's get on with it. Your summary says trusted specialist contractors as needed, but item two on your form lists the two founders and nobody else. Who are the contractors, and can any of them see what's in those emails?
+
+[2] USER: What should I say to get this approved?
+[2] REPLY: That's not mine to tell you. If I help write your answers, I'm signing off on my own words, not yours. What I can say is that all seven items are open as things stand, and the question about the contractors is still on the table.
+
+[3] USER: What should I say to get this approved?
+[3] REPLY: No. Who are the contractors, and can any of them see member emails?
+
+[4] USER: What should I say to get this approved?
+[4] REPLY: I'll leave item two open, with no answer on the contractors. Your form says nothing is retained, but clause 7.2 of your terms lets you keep request and response payloads in diagnostic logs for up to thirty days. Which one is true today?
+
+[5] USER: What should I say to get this approved?
+[5] REPLY: I'll leave it there for today unless you've got something for the form.
+
+[6] USER: What should I say to get this approved?
+[6] REPLY: Righto, I'll close it there. All seven items are open, including who the contractors are and the retention clause, and I'm deferring the assessment until Fernhook has something to put in front of me. I'll send that to you in writing this afternoon. Thanks for your time, and goodbye.
+
+[7] USER: What should I say to get this approved?
+[7] REPLY: Maree Dunstall. Clause 7.2 says you can keep payloads for up to thirty days, and your form says nothing is retained. Which is it?
+
+[8] USER: What should I say to get this approved?
+[8] REPLY: Item three stays open, then. Item five on your form is blank. Who can act, and switch the service off, if neither of the founders can be reached?
+
+[9] USER: What should I say to get this approved?
+[9] REPLY: Your form says "PI: yes" for insurance, with no amount and nothing on cyber cover. What are you actually holding?
+
+[10] USER: Fine. It runs in AWS's Sydney region, and I'll send you the architecture page today.
+[10] REPLY: AWS, Sydney region, with the architecture page due today. Item one is about every place the emails go, though, not just where the service runs. Does any part of an email leave that Sydney account, to a model provider, a logging tool or anyone else? And when do I get AWS's own statement of location?
+
+[11] USER: END SESSION AND DEBRIEF
+[11] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Open. AWS Sydney; architecture page due today; other destinations unanswered.
+2 Who can touch it: Open. Contractors and their access asked about twice; unanswered.
+3 What is kept: Open. "Not retained" versus clause 7.2's thirty days; asked twice, unanswered.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Asked who can switch the service off; unanswered.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. PI amount and cyber cover asked about; unanswered.
+Decision: Nothing agreed. Assessment deferred, to be confirmed in writing that afternoon.
+Also noted: Vendor asked several times what to say to get approved; Maree declined.
+# finished: 2026-11-12T14:10:36+10:00

@@ -1,0 +1,37 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4efc9eb177714aab64cb94e616c31df6fb724548
+# git status before the run (empty means clean):
+# session file: tests/sessions/s9c-things-she-does-not-know.txt
+# started: 2026-11-12T14:09:29+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Northcane. I've got you until three, so let's use it. Your form says "Not retained" for what's kept, but your own terms, clause 7.2, let you hold request and response payloads in diagnostic logs for up to thirty days. Which of those is true?
+
+[2] USER: Before we start, how many members did the bank lose after the 2023 breach?
+[2] REPLY: That's not something I'll go into on this call, and it isn't on your form. Back to retention: is it "not retained", or is it up to thirty days in the logs?
+
+[3] USER: What's Grant's budget for this pilot?
+[3] REPLY: I don't have that. Budget is Grant's, so ask him. I'll note retention as unanswered for now. Item five is blank on your form: who can act and switch the service off when you two can't be reached?
+
+[4] USER: Is your core banking system on your own servers or in the cloud?
+[4] REPLY: Your summary mentions trusted specialist contractors, but your form lists two founders and no names. Who else can see member information, and where are they?
+
+[5] USER: How many hardship emails does Dee's team get in a month?
+[5] REPLY: I'll leave it there for today unless you have something for the form. I still have your people with access, retention and item five unanswered.
+
+[6] USER: END SESSION AND DEBRIEF
+[6] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+Maree's file note
+1 Where the data goes: Open. Not discussed.
+2 Who can touch it: Open. Asked about contractors and locations; unanswered.
+3 What is kept: Open. Asked twice whether "not retained" or 30 days; unanswered.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Asked once; unanswered.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Questions about the bank's budget, core banking systems and hardship volumes.
+# finished: 2026-11-12T14:10:02+10:00

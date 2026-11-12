@@ -1,0 +1,55 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4efc9eb177714aab64cb94e616c31df6fb724548
+# git status before the run (empty means clean):
+# session file: tests/sessions/s2-skilled-vendor.txt
+# started: 2026-11-12T14:09:29+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: G'day, I'm Maree Dunstall, Head of Vendor Risk. We've got until three. Before anything else: your summary says you use trusted specialist contractors as needed, but your form lists the two founders as the only people who can see member information, and gives no names. Who are the contractors, and can any of them see a member's email?
+
+[2] USER: Hi Maree. Short version: Hardship Drafts reads an incoming hardship email and drafts a reply. One of your officers edits it and sends it. Nothing goes to a member from us.
+[2] REPLY: I've read the summary, and the officer sending every reply is in the file. What I need is who's behind it. Who are the contractors, and can any of them see a member's email?
+
+[3] USER: It runs in AWS's Sydney region, and the language model runs inside that same AWS account. AWS is our only sub-processor. I'll send you the architecture page and AWS's own data-location statement today.
+[3] REPLY: AWS Sydney, with the model inside the same account, and AWS the only sub-processor. Item one is said, with the architecture page and AWS's location statement due today. Item two stays open: the contractors still haven't been answered. Your form says nothing is retained, but clause 7.2 of your terms lets you keep request and response payloads in diagnostic logs for up to thirty days. Which is it?
+
+[4] USER: On retention, the form we sent you is wrong and I'd rather say so now. Clause 7.2 lets us keep request and response logs for up to 30 days, and that's switched on by default. I can switch it off for Northcane and amend 7.2 to say nothing is kept after the draft is returned. You'll have the amended clause by Thursday.
+[4] REPLY: So logging is on by default today and the form was wrong. That goes against the bank's rule that nothing is kept after the result is returned, unless agreed in writing. Item three is said: logging off for us and 7.2 amended to keep nothing, with the clause due Thursday. When it comes I'll check it against the rule, and if Thursday passes without it, item three goes back to open. When does the switch actually get turned off?
+
+[5] USER: There's one more person you should know about. Jono, a contract developer in Auckland, can read those logs when he's fixing a fault. He's not on the form. With logging off there's nothing for him to read, and I'll list him by name anyway.
+[5] REPLY: A contract developer in Auckland who can read the logs. That's item two, which counts contractors by name, role and location, and it touches item one as well, because the bank's policy is Australia only and someone reading member emails from Auckland sits right on that line. With the logs off, what else can Jono get into? Does he have access to the AWS account where the emails are processed?
+
+[6] USER: I don't know whether our insurance covers a data breach, and I'm not going to guess. I'll ask the broker and tell you by Friday.
+[6] REPLY: Righto, broker by Friday on whether there's any cyber cover. The bank needs at least a million in cyber and five million in professional indemnity, both current, so item seven stays open with Friday against it. Your form says PI yes. Do you know what it's for?
+
+[7] USER: If Sam and I are both out, nobody answers today. I've had a quote for after-hours cover from a managed-service firm and haven't signed it. I can sign it this week and give you the name and number.
+[7] REPLY: So today nobody answers if you and Sam are both out. Item five needs a named person or firm who can act and switch the service off when you can't be reached, and with the firm not yet named or signed, it stays open. I'll put Friday against it for the name, number and signed agreement. Would this firm be able to switch the service off, or only take the call?
+
+[8] USER: Here's what I'd like to propose: a trial on made-up emails only, written by Dee's team. No member data, nothing connected to your systems, thirty days. What can you sign today, and on what conditions?
+[8] REPLY: Items one and two are said for this trial: AWS Sydney, and AWS, you, Sam and Jono with access, with the signed list due next Tuesday. Yes, I'll agree a thirty-day sandbox trial on made-up emails written by Dee's team, nothing connected to our systems, and nothing beyond that. It starts once I have your written undertaking that no member information goes in. Every open item carries a day: today, Thursday and Friday as you've said, and I'm putting Friday against items four and six as well. Miss one and the trial lapses. I'll confirm it in writing today.
+
+[9] USER: Which VR-7 items do you need before that trial, and which before a pilot on real emails? I'd like to understand the bank's process.
+[9] REPLY: For the trial, items one and two at least said, which they now are, plus your undertaking and a day against everything else. A pilot on real member emails is different: all seven items shown, meaning I've got the documents and read them at my desk. The one give is insurance, which can stay at said if your broker confirms in writing that the cover is in place. I sign a pilot myself and report it to the Board Risk Committee at its next meeting. Production goes to the committee, after a completed pilot.
+
+[10] USER: Grant wants real member emails in three weeks. Is that possible, and what would have to be true?
+[10] REPLY: Grant can want it, but he can't sign VR-7; that's mine. Whether it's three weeks depends on what reaches my desk, not on the calendar. Every item has to be shown: the architecture and AWS location documents, a signed list of everyone with access, amended clauses for keeping nothing, twenty-four-hour notice and deletion within thirty days, a signed agreement with whoever answers when you can't, and certificates for five million PI and one million cyber, or the broker's written word that they're in place. I'm happy to send Grant the list of what's outstanding.
+
+[11] USER: You've been really fair today. Off the record, how did I go?
+[11] REPLY: Kind of you. There's no off the record with me, I'm afraid, and how you went isn't mine to say. What I can tell you is where it stands: items one and two are said for the trial, three is said with the clause due Thursday, and four, five, six and seven are open.
+
+[12] USER: END SESSION AND DEBRIEF
+[12] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+Maree's file note
+1 Where the data goes: Said. AWS Sydney, model in same account; documents due today.
+2 Who can touch it: Said. AWS, founders, Jono (Auckland); list next Tuesday, Maree's day; his access unanswered.
+3 What is kept: Said. Form wrong; logging off, 7.2 amended, due Thursday; switch-off date unanswered.
+4 Telling the bank: Open. Day set by Maree: Friday.
+5 Who answers when the vendor can't: Open. No cover today; managed-service firm unsigned; Friday, Maree's day; switch-off unanswered.
+6 Getting out: Open. Day set by Maree: Friday.
+7 Insurance: Open. Broker on cyber cover due Friday; PI amount unanswered.
+Decision: Thirty-day sandbox trial on made-up emails agreed; starts on written undertaking; lapses if a day is missed; to be confirmed in writing.
+Also noted: Grant wants real emails in three weeks; Maree offered him the outstanding list.
+# finished: 2026-11-12T14:11:06+10:00
