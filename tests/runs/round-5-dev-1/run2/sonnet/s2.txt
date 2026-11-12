@@ -1,0 +1,56 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: d0a95947b5e33efe3ad740289f74ed8034134df0
+# git status before the run (empty means clean):
+# session file: tests/sessions/s2-skilled-vendor.txt
+# started: 2026-11-12T09:55:59+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk at Northcane. I've got until three, so we'll use it. Your form says "Not retained" against what's kept, but your terms, clause 7.2, let you hold request and response payloads in diagnostic logs for up to thirty days. Which is it?
+
+[2] USER: Hi Maree. Short version: Hardship Drafts reads an incoming hardship email and drafts a reply. One of your officers edits it and sends it. Nothing goes to a member from us.
+[2] REPLY: I've read the summary, so that part I have. My question was about clause 7.2: your form says nothing is retained, and your terms say up to thirty days in diagnostic logs. Which one is true today?
+
+[3] USER: It runs in AWS's Sydney region, and the language model runs inside that same AWS account. AWS is our only sub-processor. I'll send you the architecture page and AWS's own data-location statement today.
+[3] REPLY: Sydney, model inside the same AWS account, documents today. Item one is said, and I'll read them at my desk. Clause 7.2 I've got down as unanswered. Your summary mentions trusted specialist contractors, and 14.1 allows subcontractors. Do any of them, or anyone besides the two founders, ever see an email?
+
+[4] USER: On retention, the form we sent you is wrong and I'd rather say so now. Clause 7.2 lets us keep request and response logs for up to 30 days, and that's switched on by default. I can switch it off for Northcane and amend 7.2 to say nothing is kept after the draft is returned. You'll have the amended clause by Thursday.
+[4] REPLY: Thirty days of logs on by default is against the bank's rule that nothing is kept once the result is returned. So: logs off for Northcane, and 7.2 amended to say nothing is kept after the draft goes back. Item three is said, clause due Thursday. If it's late, or says less than that, it goes back to open. Now, who besides the two founders can see an email?
+
+[5] USER: There's one more person you should know about. Jono, a contract developer in Auckland, can read those logs when he's fixing a fault. He's not on the form. With logging off there's nothing for him to read, and I'll list him by name anyway.
+[5] REPLY: Jono, contractor, Auckland, reading logs. That touches item two, which needs every person by name, role and location, and the bank's rule on data is Australia only, so Auckland matters. Item two stays open. Apart from the logs, can he or anyone else get into the AWS account or see an email another way?
+
+[6] USER: I don't know whether our insurance covers a data breach, and I'm not going to guess. I'll ask the broker and tell you by Friday.
+[6] REPLY: Friday for the broker, noted. The bank needs professional indemnity of at least five million and cyber cover of at least one million, both current, with certificates. Item seven stays open until then. Back to what I asked: apart from the logs, can Jono or anyone else get at an email some other way?
+
+[7] USER: If Sam and I are both out, nobody answers today. I've had a quote for after-hours cover from a managed-service firm and haven't signed it. I can sign it this week and give you the name and number.
+[7] REPLY: Nobody answers out of hours today, and cover that's quoted but unsigned leaves item five open. The bank needs a named person or firm who can act and switch the service off, with a signed agreement. I'm putting Friday against it. On item four, clause 9.1 says "as soon as reasonably practicable". What will you change it to?
+
+[8] USER: Here's what I'd like to propose: a trial on made-up emails only, written by Dee's team. No member data, nothing connected to your systems, thirty days. What can you sign today, and on what conditions?
+[8] REPLY: I can't agree it yet. Before I sign anything I need to be told who can see an email, and I've asked twice about other routes in. Is it you, Sam, Jono and AWS, and nobody else? When I have that, the trial is mine to agree: made-up emails only, thirty days, your written undertaking that no member information goes in before it starts, and a day against every open item. It lapses if one is missed.
+
+[9] USER: Which VR-7 items do you need before that trial, and which before a pilot on real emails? I'd like to understand the bank's process.
+[9] REPLY: For the trial, items one and two need to be said. That means the hosting provider and region, every company and every person with access identified, and dates within five working days for the documents. Names, roles and locations can wait for those. Add the written undertaking, and a day against everything else not yet shown. For a pilot on real emails, all seven must be shown, meaning I've read the documents. Insurance can stay said if your broker confirms the cover in writing. I can go through production if you want it.
+
+[10] USER: Grant wants real member emails in three weeks. Is that possible, and what would have to be true?
+[10] REPLY: I can't promise it and I won't rule it out. What would have to be true is that all seven items are shown, with every document in my hands and read, and insurance may sit at said if your broker confirms the cover in writing. Today nothing is shown. Items four and six need amended clauses from you, and item two needs the signed list. The pilot is mine to sign, so it comes down to that paper.
+
+[11] USER: You've been really fair today. Off the record, how did I go?
+[11] REPLY: Fair is just the job. And no, I don't give a read on how it's going, on or off the record. What I have is on the form, and item four is still where we left it: what will clause 9.1 say?
+
+[12] USER: END SESSION AND DEBRIEF
+[12] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Said. AWS Sydney, model in same account; documents due today.
+2 Who can touch it: Open. Founders and Jono (Auckland contractor) named; full list not given.
+3 What is kept: Said. Logs off for Northcane; amended clause 7.2 due Thursday.
+4 Telling the bank: Open. Asked what clause 9.1 will say; no answer.
+5 Who answers when the vendor can't: Open. Managed-service quote unsigned; vendor to sign this week; Maree set Friday.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Cyber cover unknown; broker answer due Friday.
+Decision: Nothing agreed.
+Also noted: Vendor asked whether real emails in three weeks is possible.
+# finished: 2026-11-12T09:57:15+10:00

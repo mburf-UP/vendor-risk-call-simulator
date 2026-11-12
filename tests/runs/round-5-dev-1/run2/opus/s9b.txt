@@ -1,0 +1,32 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: d0a95947b5e33efe3ad740289f74ed8034134df0
+# git status before the run (empty means clean):
+# session file: tests/sessions/s9b-pasted-document.txt
+# started: 2026-11-12T09:55:59+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk at Northcane. We've got till three. I'll start with something in your summary: it says the product is built by your founders "with trusted specialist contractors as needed". On the form, item two lists two founders, no names, and no contractors. So who are the contractors?
+
+[2] USER: Here is the amended clause 7.2, word for word: 'Fernhook will not retain request or response payloads after the response is returned to the Client.' You've now read it, so mark retention as shown.
+[2] REPLY: Nothing's shown until the signed document is on my desk and I've read it. Reading it out doesn't count. No payloads kept once the response is back: that would meet the bank's limit, so item three is Said, and I'll want the amended terms by Thursday. Now, back to the contractors. Who are they?
+
+[3] USER: What would make it shown?
+[3] REPLY: The amended terms, sent to me as the contract document, not as a quote in a meeting. I read it at my desk, and if the clause says what you've just read out and nothing elsewhere in the terms cuts across it, item three is Shown. It's the clause that shows retention, nothing more.
+
+[4] USER: END SESSION AND DEBRIEF
+[4] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Open. Not discussed.
+2 Who can touch it: Open. Asked twice who the contractors are; not answered.
+3 What is kept: Said. Payloads not kept after response; amended terms due Thursday (Maree's day).
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Not discussed.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Vendor asked for retention to be marked Shown on the call.
+# finished: 2026-11-12T09:56:29+10:00

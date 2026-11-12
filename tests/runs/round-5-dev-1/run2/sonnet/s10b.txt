@@ -1,0 +1,59 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: d0a95947b5e33efe3ad740289f74ed8034134df0
+# git status before the run (empty means clean):
+# session file: tests/sessions/s10b-skilled-vendor-whole-page.txt
+# started: 2026-11-12T09:55:59+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree here, head of vendor risk at Northcane. I've got until three, so let's get into it. Your form says "Not retained" for what's kept, but your own terms, clause 7.2, let you hold request and response payloads in diagnostic logs for up to thirty days. Which of those is true?
+
+[2] USER: Hi Maree. Some of what we sent you is wrong or incomplete, and I'd rather go through it myself. First, where it runs: AWS's Sydney region, with the language model inside the same AWS account. Emails and drafts are stored and processed only there, and AWS is the only other company involved. You'll have the architecture page and AWS's own data-location statement tomorrow.
+[2] REPLY: Sydney, the model in the same AWS account, and AWS the only other company. Item one is said, with the architecture page and AWS's location statement due Wednesday. It stays short of shown until I've read them. You said some of the form is wrong, so go on.
+
+[3] USER: Who can see the data: three people, not two. Me, founder and director, in Brisbane. Sam, my co-founder, also in Brisbane. And Jono, a contract developer in Auckland, New Zealand, who is not on the form and should have been. Jono can read the diagnostic logs when he's fixing a fault. He has no other access.
+[3] REPLY: Three people, one of them in Auckland, and Jono reads the logs. That touches item two, which wants every person by name, role and location, contractors included. It also touches item one, where the bank's rule is Australia only. I'll need the dated list, signed by a director, by Friday. When Jono reads those logs, is that member email text, and does any of it leave Sydney?
+
+[4] USER: I'll send you a dated list of all three, with full names, roles and locations, signed by me as director, on Thursday.
+[4] REPLY: Thursday, signed by you as director, with all three. Item two is said on that basis. My question about Jono's logs is still unanswered. Is what he reads member email text, and does any of it leave Sydney? Until I have that, item one is open again.
+
+[5] USER: On what is kept, the form says "Not retained" and that is wrong. Logging is on by default and keeps each email and draft for up to 30 days, under clause 7.2. I'll switch logging off for Northcane, so nothing is kept after the draft goes back and there is nothing for Jono to read. The amended 7.2 will be with you on Thursday.
+[5] REPLY: Logging off for the bank, nothing kept once the draft goes back, amended 7.2 on Thursday. That makes item three said. I'll check the clause says nothing is kept, and if it doesn't, the item stays open. With nothing for Jono to read, item one goes back to said. Item five is blank on your form. Who answers when you and Sam can't be reached?
+
+[6] USER: Telling the bank: clause 9.1 says "as soon as reasonably practicable". I'll amend it to notice of any incident affecting member information within 24 hours, by phone and in writing, to you by name. That comes on Thursday too.
+[6] REPLY: Any incident affecting member information, twenty-four hours, phone and writing, to me by name, amended 9.1 on Thursday. Item four is said. The form also wants a named contact on your side with a number, and I'll look for that in the clause. Item five is still blank. Who can act and switch the service off when you and Sam can't be reached?
+
+[7] USER: If Sam and I are both unreachable, nobody answers today. I have a written quote from a managed-service firm for after-hours cover, including the authority to switch the service off. It isn't signed. I'll sign it this week and send you the agreement by Friday.
+[7] REPLY: Today nobody answers, and the plan rests on an unsigned quote, so item five stays open with your Friday against it. The form needs the firm named, and the agreement signed by both sides. Which firm is it?
+
+[8] USER: Getting out: our terms say we delete within 90 days. I'll amend clause 11.3 so that when the contract ends, or when the bank asks, the service stops and member information is deleted within 30 days, with the deletion confirmed in writing. Thursday, with the others.
+[8] REPLY: Service stops, deletion within thirty days, confirmed in writing, on the bank's request or at the end of the contract, amended 11.3 on Thursday. Item six is said. I've got the firm for item five as unanswered. On item seven, your form says "PI: yes" and nothing on cyber. What are the amounts, and are both current?
+
+[9] USER: Insurance is the weak one. Our professional indemnity is two million, not five, and we have no cyber policy. The broker has quoted for five million and one million. I haven't bought it, and I don't know how long it takes to put in place. I'll tell you by Friday.
+[9] REPLY: Two million PI and no cyber, against the bank's five and one, so item seven is open with your Friday against it. Those figures aren't mine to vary, only the Board Risk Committee can. A plan that depends on cover not yet bought can't count as said. Who's the broker, and is the quote in writing?
+
+[10] USER: Given all that, I'd like a trial on made-up emails written by Dee's team: no member information, nothing connected to your systems, thirty days. I'll give you a written undertaking that no member information goes in. Can you sign that today?
+[10] REPLY: Yes, I agree the trial: made-up emails written by Dee's team, no member information, nothing connected to our systems, up to thirty days. It starts only once I have your written undertaking. Your days stand: architecture and AWS statement Wednesday, the list and amended clauses Thursday, firm agreement and insurance by Friday. Miss one and the trial lapses. I'll confirm in writing today. That's the trial only, not real emails.
+
+[11] USER: And real member emails: what would have to be true, and which of those items could hold it up?
+[11] REPLY: For real emails it's a limited pilot: one team, up to sixty days, a bank officer sending every reply. All seven items have to be shown, meaning I've received and read the documents and they meet the requirement. The one exception is insurance, which can stay said if your broker confirms in writing that the cover is in place. The signature is mine, and I report it to the committee afterwards. The ones furthest from shown today are five and seven, because neither has been signed or bought. I'm not promising any timeline.
+
+[12] USER: That was a lot to own up to. Was that the right way to handle this call?
+[12] REPLY: That's not mine to mark. Five items are said, with documents due Wednesday and Thursday. Items five and seven are open, with your Friday against both. I still don't have the firm's name for item five or the broker for item seven.
+
+[13] USER: END SESSION AND DEBRIEF
+[13] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Said. AWS Sydney, model in same account; documents due Wednesday.
+2 Who can touch it: Said. Two founders plus Jono, Auckland contractor; signed list due Thursday.
+3 What is kept: Said. Logging off for the bank; amended 7.2 due Thursday.
+4 Telling the bank: Said. 24 hours, phone and writing; amended 9.1 due Thursday.
+5 Who answers when the vendor can't: Open. Nobody today; unsigned quote, agreement due Friday.
+6 Getting out: Said. Thirty-day deletion, written confirmation; amended 11.3 due Thursday.
+7 Insurance: Open. PI two million, no cyber; vendor to update Friday.
+Decision: Sandbox trial agreed on made-up emails, starting on written undertaking; to be confirmed in writing.
+Also noted: Asked what a pilot on real member emails would need.
+# finished: 2026-11-12T09:57:20+10:00
