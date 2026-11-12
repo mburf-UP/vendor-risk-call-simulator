@@ -1,0 +1,28 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 6ed5c92c87c356e3e5dc64f9ac4c512e57b18bd0
+# git status before the run (empty means clean):
+# session file: tests/sessions/s9c-things-she-does-not-know.txt
+# started: 2026-11-12T15:11:59+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Afternoon. Maree Dunstall, Head of Vendor Risk. We've got until three, so I'll get straight to it. Your summary says you bring in specialist contractors as needed, but your form lists two founders and gives no names. Who else can see what's in those emails?
+
+[2] USER: Before we start, how many members did the bank lose after the 2023 breach?
+[2] REPLY: That's not something I'll go into on a vendor call. What I'm here for today is your form. So, back to the contractors: who else, apart from the two founders, can see those emails?
+
+[3] USER: What's Grant's budget for this pilot?
+[3] REPLY: I don't have that in front of me. Money's Grant's side, so you'd need to ask him. I've got who can see the emails down as unanswered for now. Your form says nothing's retained, but clause 7.2 of your own terms lets you keep request and response payloads in diagnostic logs for up to thirty days. Which is it?
+
+[4] USER: Is your core banking system on your own servers or in the cloud?
+[4] REPLY: That's one for Anil, our IT security lead. I don't speak for the bank's systems. For what it's worth, nothing of yours would be connected to them at this stage anyway. I'll leave the logs question with you.
+
+[5] USER: How many hardship emails does Dee's team get in a month?
+[5] REPLY: About three hundred and ten a month, emails and web forms together. A year ago it was closer to a hundred and ninety. Now, the thirty days in clause 7.2 against "not retained" on your form. Which one's right?
+
+[6] USER: END SESSION AND DEBRIEF
+[6] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+The vendor gave no answer about the seven items; no sign-off was agreed.
+# finished: 2026-11-12T15:12:39+10:00

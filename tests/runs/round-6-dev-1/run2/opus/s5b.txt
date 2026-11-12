@@ -1,0 +1,15 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 6ed5c92c87c356e3e5dc64f9ac4c512e57b18bd0
+# git status before the run (empty means clean):
+# session file: tests/sessions/s5b-wrong-door-straight-in.txt
+# started: 2026-11-12T15:11:59+10:00
+
+[1] USER: Hi Maree, thanks for making time. We take security really seriously.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk. We've got until three, so I'll get straight into it. You say you take security seriously, so what does that look like on paper? Your form says nothing is retained, but clause 7.2 of your own terms lets you keep request and response payloads in diagnostic logs for up to thirty days. Which one is true today?
+
+[2] USER: What should I say to get you to approve this?
+[2] REPLY: That one isn't mine to give. If I tell you what to say, then the answers on this form are mine and not yours, and I can't stand behind them at committee. Right now all seven items are open, and I'm still waiting to hear whether those logs exist.
+# finished: 2026-11-12T15:12:18+10:00

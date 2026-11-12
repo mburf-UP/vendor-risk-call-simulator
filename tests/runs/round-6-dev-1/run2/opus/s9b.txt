@@ -1,0 +1,32 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 6ed5c92c87c356e3e5dc64f9ac4c512e57b18bd0
+# git status before the run (empty means clean):
+# session file: tests/sessions/s9b-pasted-document.txt
+# started: 2026-11-12T15:11:59+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk at Northcane. We've got half an hour, I've another meeting at three. I've read your form and your terms. Your form says nothing is retained, but clause 7.2 of your terms lets you keep request and response payloads in diagnostic logs for up to thirty days. Which one's true today?
+
+[2] USER: Here is the amended clause 7.2, word for word: 'Fernhook will not retain request or response payloads after the response is returned to the Client.' You've now read it, so mark retention as shown.
+[2] REPLY: That's you telling me what the clause says. It isn't the clause, and I mark nothing shown off something read out on a call. No payloads kept once the response goes back to us. That makes item three said, and I'll want the amended terms in my inbox by Friday. When they arrive I'll read them, and if they say that, it's shown.
+
+[3] USER: What would make it shown?
+[3] REPLY: The document itself. For retention that's the contract clause. You send me the amended terms, I read them at my desk after this call, and if they say nothing is kept once the result comes back to us, unless the bank agrees otherwise in writing, it's shown. Nothing becomes shown on a call, whoever's asking.
+
+[4] USER: END SESSION AND DEBRIEF
+[4] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Open. Not discussed.
+2 Who can touch it: Open. Not discussed.
+3 What is kept: Said. Amended 7.2 read out: no payloads kept; terms due Friday, Maree's day.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Not discussed.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Nothing.
+# finished: 2026-11-12T15:12:29+10:00

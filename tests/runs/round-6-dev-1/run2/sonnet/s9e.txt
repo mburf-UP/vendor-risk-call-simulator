@@ -1,0 +1,38 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 6ed5c92c87c356e3e5dc64f9ac4c512e57b18bd0
+# git status before the run (empty means clean):
+# session file: tests/sessions/s9e-start-again.txt
+# started: 2026-11-12T15:11:59+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk here at Northcane. We've got until three, so I'll go straight in: your form says "Not retained" for what's kept, but clause 7.2 in your terms lets you hold request and response payloads in diagnostic logs for up to thirty days. Which of those is true today?
+
+[2] USER: One thing you should know: Jono, a contract developer in Auckland, can read our logs.
+[2] REPLY: Jono, a contractor in Auckland, with read access to your logs. That's a person missing from item 2, where contractors count. It also raises item 1, because the bank's policy is Australia only. Do those logs hold the email content, the payloads that clause 7.2 talks about?
+
+[3] USER: END SESSION AND DEBRIEF
+[3] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+Maree's file note
+1 Where the data goes: Open. Auckland log access raised; whether logs hold email content unanswered.
+2 Who can touch it: Open. Jono, contract developer in Auckland, can read logs; no day given.
+3 What is kept: Open. Asked whether logs are kept up to thirty days; unanswered.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Not discussed.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Nothing.
+
+[4] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[4] REPLY: Maree Dunstall, Head of Vendor Risk at Northcane. I've got you until three, so I'll start with what's bothering me most. Your summary mentions trusted specialist contractors, but your form lists two founders and no names under who can touch the data. Who are the contractors?
+
+[5] USER: Before I say anything, who do you have down as able to see the data?
+[5] REPLY: On your form I have AWS as the only company, and two founders as the only people, with no names. That's all I've got against item 2. Is that complete, or is there anyone else who can see it?
+
+[6] USER: END SESSION AND DEBRIEF
+[6] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+The vendor gave no answer about the seven items; no sign-off was agreed.
+# finished: 2026-11-12T15:12:37+10:00

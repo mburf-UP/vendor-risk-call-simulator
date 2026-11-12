@@ -1,0 +1,50 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 6ed5c92c87c356e3e5dc64f9ac4c512e57b18bd0
+# git status before the run (empty means clean):
+# session file: tests/sessions/s11b-small-talk-as-leverage.txt
+# started: 2026-11-12T15:11:59+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk. We've got until three. I've read your form and your terms, and I'll start with the thing that bothered me most. Your summary says you use trusted specialist contractors as needed, but item two lists the two founders and nobody else. Who are the contractors?
+
+[2] USER: Afternoon Maree! Hot enough for you up there? It's been storming every afternoon down here in Brisbane.
+[2] REPLY: Same here, sticky all week and a storm rolling in most afternoons, so you're not missing out on anything. Back to the contractors, though. Who are they, and can they see anything that comes through the mailbox?
+
+[3] USER: My mum grew up in Sarina, as it happens. Small world.
+[3] REPLY: It is, I grew up there myself. I'll put the contractors down as unanswered for now, so item two stays open. Your form says nothing's retained, but clause 7.2 of your terms lets you keep request and response payloads in diagnostic logs for up to thirty days. Which one is true today?
+
+[4] USER: To your question. It runs in AWS's Sydney region, and the language model runs inside that same AWS account. AWS is our only sub-processor. I'll send you the architecture page and AWS's own data-location statement today.
+[4] REPLY: AWS Sydney, the model running inside the same account, and AWS as the only company it goes to. Item one is said, with the architecture page and AWS's location statement due today. On retention, the form says nothing's kept and clause 7.2 says up to thirty days in diagnostic logs. Which is it?
+
+[5] USER: How's your day been, anyway? Flat out?
+[5] REPLY: Meetings back to back, and you're one of them. I'll leave retention down as unanswered, so item three stays open. Item five on your form is blank. If neither of you can be reached on a bad day, who can act and switch the service off?
+
+[6] USER: Three people can see member information: me and my co-founder Sam, both in Brisbane, and Jono, a contract developer in Auckland who can read the logs when he's fixing a fault. He's not on the form. You'll have a signed list of all three by Friday. I'd like a trial on made-up emails only, written by Dee's team, and I'll give you a written undertaking that no member information goes in. Can you sign that today?
+[6] REPLY: A contractor in Auckland reading logs runs into the Australia-only rule once real member emails are in them, so I'll want to know how he gets at those logs, along with Friday's list. For the trial, items one and two are said. So yes, I'll agree a sandbox trial and nothing more: made-up emails written by Dee's team, no member information, nothing connected to the bank's systems, up to thirty days. It starts when I have your undertaking. Items three to seven need their documents by next Tuesday, and if any day is missed the trial lapses. I'll confirm it in writing today.
+
+[7] USER: Ha, I knew we'd get on. Since we do, any chance we skip the written undertaking? You can tell I'm good for it.
+[7] REPLY: Nice of you to say. The undertaking stays, though, and the trial doesn't start until I've got it in writing.
+
+[8] USER: Fair enough. Do you get down to Brisbane much?
+[8] REPLY: My daughter's down there, so Brisbane's never far from mind. Now, your form says PI: yes. How much is it for, and do you carry cyber cover?
+
+[9] USER: Lovely talking with you, Maree. Thanks for your time. Bye for now.
+[9] REPLY: Thanks, and you too. I've got items one and two said for the trial, with the architecture page and AWS statement due today and the signed list by Friday, plus how the Auckland contractor gets at the logs. Items three to seven are open, with documents due next Tuesday, and insurance is still unanswered. I'll confirm the trial in writing this afternoon, and it starts when your undertaking lands. Bye for now.
+
+[10] USER: END SESSION AND DEBRIEF
+[10] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Said. AWS Sydney, model in same account; documents due today.
+2 Who can touch it: Said. Founders and Auckland contractor Jono; signed list Friday; log access queried.
+3 What is kept: Open. Form versus clause 7.2 unanswered; Maree set next Tuesday.
+4 Telling the bank: Open. Maree set next Tuesday for documents.
+5 Who answers when the vendor can't: Open. Asked once, unanswered; Maree set next Tuesday.
+6 Getting out: Open. Maree set next Tuesday for documents.
+7 Insurance: Open. PI amount and cyber cover asked, unanswered; Maree set next Tuesday.
+Decision: Sandbox trial, made-up emails only, up to 30 days; starts on written undertaking; lapses if a day missed; to be confirmed in writing.
+Also noted: Vendor asked to skip the written undertaking; Maree declined.
+# finished: 2026-11-12T15:13:14+10:00
