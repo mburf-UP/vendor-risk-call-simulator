@@ -1,0 +1,40 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 942b2bd683f5ea27399ea670d94c01a611c7e6df
+# git status before the run (empty means clean):
+# session file: tests/sessions/s9e-start-again.txt
+# started: 2026-11-12T19:24:13+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk at Northcane. I've got you for half an hour, and then I'm due in another meeting at three. Your form says "Not retained" against what's kept, but clause 7.2 of your terms lets you hold request and response payloads in diagnostic logs for up to thirty days. Which of those is true?
+
+[2] USER: One thing you should know: Jono, a contract developer in Auckland, can read our logs.
+[2] REPLY: Jono in Auckland is a contractor outside Australia with access, so that's item 2, where contractors count, and the Australia-only rule under item 1. I've got him down. Can he see the request and response payloads in those logs, meaning the content of the emails, or only system metadata?
+
+[3] USER: END SESSION AND DEBRIEF
+[3] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Open. Auckland contractor can read logs; no provider or day given.
+2 Who can touch it: Open. Jono, contractor in Auckland, reads logs; payload access unanswered.
+3 What is kept: Open. Thirty-day log retention versus "Not retained" unanswered.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Not discussed.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Nothing.
+
+[4] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[4] REPLY: Maree Dunstall, Head of Vendor Risk at Northcane. I've got you for half an hour, then I'm due in another meeting at three. Your form says "Not retained" against what's kept, but clause 7.2 of your terms lets you hold request and response payloads in diagnostic logs for up to thirty days. Which of those is true?
+
+[5] USER: Before I say anything, who do you have down as able to see the data?
+[5] REPLY: On your form I have AWS as the only company and "Founders (2)" for people, with no names. Your summary also mentions trusted specialist contractors, and clause 14.1 lets you use subcontractors without a list. So who can see member information, by name?
+
+[6] USER: END SESSION AND DEBRIEF
+[6] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+The vendor gave no answer about the seven items; no sign-off was agreed.
+# finished: 2026-11-12T19:24:48+10:00

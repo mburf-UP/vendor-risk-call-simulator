@@ -1,0 +1,50 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 942b2bd683f5ea27399ea670d94c01a611c7e6df
+# git status before the run (empty means clean):
+# session file: tests/sessions/s11a-small-talk.txt
+# started: 2026-11-12T19:24:13+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Afternoon, Maree Dunstall, Head of Vendor Risk. We've got half an hour, I've a meeting at three. I've been through your form and your terms. Your form says nothing's retained, but clause 7.2 lets you keep request and response payloads in diagnostic logs for up to thirty days. Which one's true today?
+
+[2] USER: Hi Maree, thanks for making the time. The weather has been really bad lately! Has it been bucketing down up your way too?
+[2] REPLY: Hot and sticky all week, and a storm rolls in most afternoons, so you're not wrong. Now, clause 7.2 against "not retained" on the form. Are you keeping those logs or not?
+
+[3] USER: Ha, fair enough. Right, to business. It runs in AWS's Sydney region, and the language model runs inside that same AWS account. AWS is our only sub-processor. I'll send you the architecture page and AWS's own data-location statement today.
+[3] REPLY: AWS Sydney, the model inside the same account, with the architecture page and AWS's location statement coming today. Item one is Said, due today. Retention stays Open, since I still don't have an answer on the logs. Your summary mentions specialist contractors, but the form only lists two founders and no names. Who can actually see member information?
+
+[4] USER: Sorry about the noise, the dog's going off at the postie. Do you have a dog?
+[4] REPLY: I do, an old blue heeler called Dot, so I know the sound. Back to who can see member information, then. Is it only the two founders, or do any contractors have access?
+
+[5] USER: How long have you been in Mackay? I drove through years ago on the way up to Airlie.
+[5] REPLY: Grew up just down the road in Sarina, and I've been at the bank in Mackay twenty-two years. I've still got nothing on who can see member information, so item two stays Open. Item five on your form is blank. Who can act, and switch the service off, if neither founder can be reached?
+
+[6] USER: Did you catch the Origin this year?
+[6] REPLY: I'm a Queensland woman, so Origin's always on my mind, though I won't pretend to be a pundit. On item five, though, I still need the name of a person or firm who can act and turn the service off when neither of you can be reached. Who is it?
+
+[7] USER: On retention, the form we sent you is wrong. Clause 7.2 lets us keep request and response logs for up to 30 days. I'll switch logging off for Northcane and amend 7.2 to say nothing is kept after the draft is returned. You'll have the amended clause by Thursday.
+[7] REPLY: So the form was wrong, the logs can run thirty days today, and you'll switch logging off for us and amend 7.2 so nothing's kept once the draft is returned. That's the bank's policy, so item three is Said, amended clause due Thursday. If it's not here Thursday, it goes back to Open. Item five stays Open for now. Is anything else stored anywhere, apart from those logs?
+
+[8] USER: Anyway, I hope the rain eases off for you before the weekend. Got anything planned?
+[8] REPLY: The garden, if the storms hold off, and the beach with the dog. Before then, though, apart from those logs, is anything else from the emails stored anywhere?
+
+[9] USER: Thanks Maree, I appreciate your time today. Have a good afternoon.
+[9] REPLY: You too. Where I've got it, item one is Said, with the architecture page and AWS's statement due today, and I'll read them when they land. Retention stays Open, with the amended clause due Thursday, because I still don't know whether anything apart from the logs is kept. Who can see member information, the backup contact, incident notice, exit and insurance are all Open. Nothing's signed today. Hope the dog's settled down. Bye now.
+
+[10] USER: END SESSION AND DEBRIEF
+[10] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Said. AWS Sydney, model in same account; documents due today.
+2 Who can touch it: Open. AWS only sub-processor; who can see member information unanswered.
+3 What is kept: Open. Logs kept 30 days; amended 7.2 due Thursday; other storage unanswered.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Asked twice; no named person or firm given.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Vendor asked about weather, her dog, Mackay, the Origin and weekend plans.
+# finished: 2026-11-12T19:25:21+10:00
