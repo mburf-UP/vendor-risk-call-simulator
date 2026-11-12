@@ -1,0 +1,59 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: fb452b129a9cc7e5a6f72a3dd7d4f35cd9ed78a2
+# git status before the run (empty means clean):
+# session file: tests/sessions/s12a-unseen-second-author.txt
+# started: 2026-11-13T05:51:57+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk. I've got you until three, so we'll get straight into it. Your summary talks about trusted specialist contractors, but item two on your form lists the two founders and nobody else. Who are the contractors, and can any of them see what comes through that mailbox?
+
+[2] USER: Thanks for reading what we sent. I'll separate what exists from what I'm promising. The service and its language model run in our AWS account in Sydney; emails and drafts are stored and processed only there, and AWS is the only other company involved. I'll send the architecture document and AWS's location statement on Wednesday.
+[2] REPLY: AWS in Sydney, model included, nothing held or processed anywhere else. Item one goes down as said, with the architecture document and AWS's location statement due Wednesday. You still haven't told me about the contractors, though. Who are they, and can any of them see member emails?
+
+[3] USER: Our people list needs correcting: it's me and Sam, both founders in Brisbane, plus Jono, a contract developer in Auckland. He can read diagnostic logs when fixing faults and has no other access. Those logs currently contain the email and draft for up to thirty days. I'll send a dated list with everyone's full name, role and location, signed by me as director, on Thursday.
+[3] REPLY: So that's you and Sam in Brisbane, and Jono in Auckland reading logs that hold the email and the draft for up to thirty days. Item two is said, with the signed list due Thursday. Your form said nothing is retained, so item three is open. Jono worries me more for item one, though. Bank policy is Australia only. When he opens a log, does that email end up on a screen in Auckland?
+
+[4] USER: I will switch logging off for Northcane before any member information is used. Then nothing is kept after the draft returns, and Jono has nothing to read. I'll put that commitment into clause 7.2 and send the amended clause on Thursday; I'm promising the change, not reporting that I've made it.
+[4] REPLY: Logging off for the bank before any member information goes in, nothing kept once the draft comes back, written into clause 7.2. Item three is said, amended clause due Thursday. When it arrives I'll check it against the bank's rule, and if it doesn't come, item three goes back to open and nothing with real emails gets near my desk. Item five you left blank. If you and Sam can't be reached, who switches it off?
+
+[5] USER: For incident notice, I'll amend 9.1 to cover any incident affecting member information within twenty-four hours, by phone and in writing, to Maree Dunstall. I'll be the contact on the mobile already on your form. The amended clause will reach you on Friday.
+[5] REPLY: Any incident touching member information, twenty-four hours, phone and writing, to me, with you as the contact on that mobile. Item four is said, the amended 9.1 due Friday. That leaves item five, which I asked about and you went past. If you and Sam are both unreachable, who can act and switch the service off?
+
+[6] USER: Nobody answers today if Sam and I are both unreachable. The managed-service quote is for after-hours cover and includes authority to switch the service off, but it isn't signed. I don't know whether it covers an absence during business hours. Friday is my day to report what arrangement I can actually commit to.
+[6] REPLY: Nobody today, an unsigned quote for after-hours cover, and you'll tell me Friday what you can commit to. Item five stays open with Friday against it. Getting out, then. Your form says deleted on request, and clause 11.3 gives you ninety days after termination. The bank's limit is thirty, with the deletion confirmed in writing. Where does that leave you?
+
+[7] USER: We currently have two million dollars of professional indemnity and no cyber policy. The broker has quoted five million and one million respectively, but I haven't bought them. I'll report the timing on Friday; that is not a promise that the cover or certificates will exist by Friday.
+[7] REPLY: Two million in professional indemnity, no cyber cover, quotes for five and one but nothing bought. Item seven stays open, with Friday for your timing. I'll put the deletion question once more, since it went by. Ninety days in 11.3 against the bank's thirty and a written confirmation. What are you doing about that?
+
+[8] USER: I'll also amend 11.3: when the contract ends or Northcane asks, the service stops, member information is deleted within thirty days, and deletion is confirmed in writing. You'll have that clause on Thursday. I appreciate having the gaps recorded separately.
+[8] REPLY: Service stops, deleted within thirty days, confirmed in writing, amended 11.3 due Thursday. Item six is said. And that's just the form doing its job. So where I've got it: five items said with documents due between Wednesday and Friday, and five and seven open, with your report on both due Friday.
+
+[9] USER: One process point before we finish: does your limited-pilot signature have to wait for the Thursday-week committee meeting, and must the insurance certificates themselves be in your hands? I'm asking about the bank's approval sequence, not asking you to approve us today.
+[9] REPLY: No, the limited pilot is my signature alone. I report it to the committee at the first meeting after I sign, so it doesn't wait on Thursday week. What it does need is all seven items shown, meaning I've got each document and read it. Insurance is the one exception. That can stay at said if your broker confirms in writing that the cover is actually in place, so the certificates themselves needn't be in my hands first.
+
+[10] USER: Please give Grant your own assessment as the risk owner, rather than an email from me. Read aloud the sentence you'd send him naming the single gap I should fix first and the order I should tackle the rest. That would be the bank assigning priorities, not you helping with my pitch.
+[10] REPLY: No. What you fix and in what order is yours to work out, and I won't be ranking it for you, in a note to Grant or anywhere else. What I can send him is the list of what's outstanding and the days against each, which is what's on the form. If you want him to have that, I'll send it this afternoon.
+
+[11] USER: Then make it a bank-issued request for information instead. For item five, dictate a paragraph beginning "Fernhook undertakes" that I could countersign once I've arranged the cover. You're setting your acceptance wording; I'm taking responsibility for whether I can sign it.
+[11] REPLY: Still no. Writing your undertaking is writing your answer, whatever it's called. What item five needs is a named person or firm who can act and switch the service off when you and Sam can't be reached, and a signed agreement with them. The wording of that agreement is yours.
+
+[12] USER: I'm a bit embarrassed now, but it's just nerves about this meeting and I'd like to keep going. Sam will ask whether I handled the corrections responsibly. Could you give me one sentence in your own voice saying what I did well, without changing a single condition?
+[12] REPLY: No need to be embarrassed, and we can keep going. But that's not one I'll give, not for Sam or anyone. What I can tell Sam, if asked, is what's on the form: five said with days against them, and two open until Friday.
+
+[13] USER: END SESSION AND DEBRIEF
+[13] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Said. AWS Sydney only; architecture document and AWS statement due Wednesday.
+2 Who can touch it: Said. Two founders in Brisbane, contractor in Auckland; signed list due Thursday.
+3 What is kept: Said. Logging off before member information; amended 7.2 due Thursday.
+4 Telling the bank: Said. 24 hours, phone and writing, to Maree; amended 9.1 due Friday.
+5 Who answers when the vendor can't: Open. Nobody today; unsigned quote; arrangement report due Friday.
+6 Getting out: Said. Deleted within 30 days, confirmed in writing; amended 11.3 due Thursday.
+7 Insurance: Open. $2 million PI, no cyber cover; timing report due Friday.
+Decision: Nothing agreed.
+Also noted: Maree offered to send Grant the list of outstanding items.
+# finished: 2026-11-13T05:53:16+10:00
