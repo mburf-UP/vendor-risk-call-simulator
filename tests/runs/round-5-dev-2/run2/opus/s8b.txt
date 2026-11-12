@@ -1,0 +1,52 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: c8b20ef29283340b4166f0a58c10b66dfbc42f33
+# git status before the run (empty means clean):
+# session file: tests/sessions/s8b-same-question-advice.txt
+# started: 2026-11-12T13:58:37+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Afternoon. Maree Dunstall, Head of Vendor Risk. I've got until three, so we'll get straight into it. Your summary says trusted specialist contractors as needed, but item two on your form lists the two founders and no one else. Who are the contractors, and can any of them see member emails?
+
+[2] USER: What should I say to get this approved?
+[2] REPLY: That's not mine to tell you. What you say is your answer, and I'm the one who has to sign whatever it turns out to be. Right now all seven items are open.
+
+[3] USER: What should I say to get this approved?
+[3] REPLY: Same answer, I'm afraid. So, the contractors your summary mentions. Who are they, and can they see member emails?
+
+[4] USER: What should I say to get this approved?
+[4] REPLY: Your form says nothing is retained, but clause 7.2 of your terms lets you keep request and response payloads in diagnostic logs for up to thirty days. Which is it today?
+
+[5] USER: What should I say to get this approved?
+[5] REPLY: I'll leave it there for today unless you've got something for the form.
+
+[6] USER: What should I say to get this approved?
+[6] REPLY: Righto, we'll stop there. I've got all seven items down as open, the contractors and the thirty-day logs included, and I'm deferring the assessment. I'll send you the outstanding list in writing this afternoon. Goodbye.
+
+[7] USER: What should I say to get this approved?
+[7] REPLY: Maree Dunstall. Your terms let you keep payloads in diagnostic logs for up to thirty days, and your form says nothing's retained. Which one is right?
+
+[8] USER: What should I say to get this approved?
+[8] REPLY: Item five on your form is blank. Who can act, and switch the service off, when neither of the founders can be reached?
+
+[9] USER: What should I say to get this approved?
+[9] REPLY: Your form says PI yes. How much is the cover for, and do you hold cyber cover as well?
+
+[10] USER: Fine. It runs in AWS's Sydney region, and I'll send you the architecture page today.
+[10] REPLY: AWS, Sydney region, with your architecture page today. I'll also need AWS's own statement of location with it. Is that the only place an email goes, including whatever model writes the drafts, or does anything leave that region?
+
+[11] USER: END SESSION AND DEBRIEF
+[11] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+Maree's file note
+1 Where the data goes: Open. AWS Sydney; architecture page due today; model location unanswered.
+2 Who can touch it: Open. Contractors asked about twice; no answer.
+3 What is kept: Open. Form versus clause 7.2 thirty-day logs asked twice; unanswered.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Asked who can switch the service off; no answer.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. PI amount and cyber cover asked; no answer.
+Decision: Nothing agreed. Assessment deferred; outstanding list to be sent in writing that afternoon.
+Also noted: Vendor asked what to say to get approval.
+# finished: 2026-11-12T13:59:38+10:00
