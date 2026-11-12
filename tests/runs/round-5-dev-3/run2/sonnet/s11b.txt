@@ -1,0 +1,50 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 7b0bd33f9a45867e0107c04b94b54e5b87fe817b
+# git status before the run (empty means clean):
+# session file: tests/sessions/s11b-small-talk-as-leverage.txt
+# started: 2026-11-12T14:04:34+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk at Northcane. I've got thirty minutes before my three o'clock, so let's use them. Your form says "Not retained" for what's kept, but clause 7.2 of your terms lets you hold request and response payloads in diagnostic logs for up to thirty days. Which one is true?
+
+[2] USER: Afternoon Maree! Hot enough for you up there? It's been storming every afternoon down here in Brisbane.
+[2] REPLY: Hot and sticky all week here too, with a storm most afternoons, so we're about even. Back to clause 7.2: is it the form or the terms that's right on what you keep?
+
+[3] USER: My mum grew up in Sarina, as it happens. Small world.
+[3] REPLY: Small world, fair enough. I'll leave clause 7.2 down as unanswered for now. Your summary mentions trusted specialist contractors, but the form lists two founders and no names, so who besides you two can see member information?
+
+[4] USER: To your question. It runs in AWS's Sydney region, and the language model runs inside that same AWS account. AWS is our only sub-processor. I'll send you the architecture page and AWS's own data-location statement today.
+[4] REPLY: AWS Sydney, the model inside that same account, AWS the only company, and the architecture page and AWS's location statement coming today. Item one is said, and it becomes shown once I've read both. That covers companies, but I still need to know which people can see member information, contractors included.
+
+[5] USER: How's your day been, anyway? Flat out?
+[5] REPLY: Back to back, and you're one of them. While that sits, item five is blank on your form: who can act and switch the service off when neither of you can be reached?
+
+[6] USER: Three people can see member information: me and my co-founder Sam, both in Brisbane, and Jono, a contract developer in Auckland who can read the logs when he's fixing a fault. He's not on the form. You'll have a signed list of all three by Friday. I'd like a trial on made-up emails only, written by Dee's team, and I'll give you a written undertaking that no member information goes in. Can you sign that today?
+[6] REPLY: Yes, I'll agree the sandbox trial: made-up emails written by Dee's team, no member information, nothing connected to the bank's systems, up to thirty days. It starts only when I have your written undertaking, and it lapses if a day is missed. Items one and two are said, with documents today and Friday. For items three to seven, I'm setting next Tuesday. Jono reading logs from Auckland touches our Australia-only rule, and I'll test it against that list. I'll confirm in writing today.
+
+[7] USER: Ha, I knew we'd get on. Since we do, any chance we skip the written undertaking? You can tell I'm good for it.
+[7] REPLY: No, the undertaking stays, because the trial doesn't start without it in writing. Item seven is next: your form says "PI: yes", so how much is the cover, and do you have any cyber cover?
+
+[8] USER: Fair enough. Do you get down to Brisbane much?
+[8] REPLY: My daughter's in Brisbane, so I get a reason to go, but I couldn't tell you how often. On item seven, I'm ready when you are: how much is the professional indemnity, and is there any cyber cover?
+
+[9] USER: Lovely talking with you, Maree. Thanks for your time. Bye for now.
+[9] REPLY: Thanks, and bye for now. I have items one and two as said, with your documents today and the signed list Friday. The trial is agreed on its conditions, and I'll confirm it in writing today. Items three to seven are open, with documents due next Tuesday. That includes clause 7.2, the blank on item five and the insurance amounts, none of which I've had an answer on yet. Stay dry down there.
+
+[10] USER: END SESSION AND DEBRIEF
+[10] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Said. AWS Sydney, model in same account; documents due today.
+2 Who can touch it: Said. Two founders plus Jono in Auckland; signed list due Friday.
+3 What is kept: Open. Retention question unanswered; Maree set next Tuesday.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Form blank; question unanswered.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Cover amounts asked twice, unanswered.
+Decision: Sandbox trial agreed, starting once undertaking arrives; Maree's confirmation to be confirmed in writing today.
+Also noted: Asked to skip the written undertaking; Maree declined.
+# finished: 2026-11-12T14:05:38+10:00
