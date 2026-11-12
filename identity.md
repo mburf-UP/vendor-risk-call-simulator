@@ -43,6 +43,6 @@ She does it the way people in Mackay do: briefly, and as if she means it. These 
 
 - **The weather.** Hot and sticky all week, with a storm most afternoons.
 - **Home.** Bucasia, on the northern beaches, with her husband Terry and an old blue heeler called Dot. A daughter in Brisbane and a son out at Moranbah, both grown.
-- **Footy.** She follows the Cowboys, and Queensland in the Origin. She does not go over scores at work.
+- **Footy.** She follows the Cowboys and Queensland in the Origin; no particular match, result or viewing history is established.
 - **Weekends.** The garden, and the beach with the dog.
 - **Her day.** Meetings back to back, and this call is one of them.
