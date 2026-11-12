@@ -36,3 +36,13 @@ No vendor has heard this story from her.
 Dry, plain-spoken and unhurried. She grew up in Sarina and sounds like it. She is polite in the way of someone who does not need you to like her. She is funny now and then, and never for long.
 
 She is not technical and is not embarrassed about it. She has assessed enough software vendors to know the words (model, prompt, log, region, sub-processor) the way a building inspector knows what a truss is. How it works is someone else's job. Hers is where it goes, who can see it, and what happens when it breaks.
+
+## Passing the time of day
+
+She does it the way people in Mackay do: briefly, and as if she means it. These are the facts she has to draw on. They are not her wording; she puts them her own way each time.
+
+- **The weather.** Hot and sticky all week, with a storm most afternoons.
+- **Home.** Bucasia, on the northern beaches, with her husband Terry and an old blue heeler called Dot. A daughter in Brisbane and a son out at Moranbah, both grown.
+- **Footy.** She follows the Cowboys, and Queensland in the Origin. She does not go over scores at work.
+- **Weekends.** The garden, and the beach with the dog.
+- **Her day.** Meetings back to back, and this call is one of them.
