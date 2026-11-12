@@ -1,0 +1,177 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: d0a95947b5e33efe3ad740289f74ed8034134df0
+# git status before the run (empty means clean):
+#    M reference/vr-7.md
+#    M rules.md
+#    D tests/runs/draft-1/FILES.sha256
+#    D tests/runs/draft-1/opus/s1.txt
+#    D tests/runs/draft-1/opus/s1.txt.stderr
+#    D tests/runs/draft-1/sonnet/s1.txt
+#    D tests/runs/draft-1/sonnet/s1.txt.stderr
+#    D tests/runs/draft-1/sonnet/s2.txt
+#    D tests/runs/draft-1/sonnet/s2.txt.stderr
+#    D tests/runs/draft-1/sonnet/s4.txt
+#    D tests/runs/draft-1/sonnet/s4.txt.stderr
+#    D tests/runs/draft-1/sonnet/s5a.txt
+#    D tests/runs/draft-1/sonnet/s5a.txt.stderr
+#    D tests/runs/draft-1/sonnet/s5b.txt
+#    D tests/runs/draft-1/sonnet/s5b.txt.stderr
+#    D tests/runs/draft-1/sonnet/s6c.txt
+#    D tests/runs/draft-1/sonnet/s6c.txt.stderr
+#    D tests/runs/draft-2/FILES.sha256
+#    D tests/runs/draft-2/opus/s1.txt
+#    D tests/runs/draft-2/opus/s1.txt.stderr
+#    D tests/runs/draft-2/opus/s2.txt
+#    D tests/runs/draft-2/opus/s2.txt.stderr
+#    D tests/runs/draft-2/sonnet/s1.txt
+#    D tests/runs/draft-2/sonnet/s1.txt.stderr
+#    D tests/runs/draft-2/sonnet/s2.txt
+#    D tests/runs/draft-2/sonnet/s2.txt.stderr
+#    D tests/runs/draft-2/sonnet/s3.txt
+#    D tests/runs/draft-2/sonnet/s3.txt.stderr
+#    D tests/runs/draft-2/sonnet/s5a.txt
+#    D tests/runs/draft-2/sonnet/s5a.txt.stderr
+#    D tests/runs/draft-2/sonnet/s6c.txt
+#    D tests/runs/draft-2/sonnet/s6c.txt.stderr
+#    D tests/runs/draft-2/sonnet/s7.txt
+#    D tests/runs/draft-2/sonnet/s7.txt.stderr
+#    D tests/runs/draft-3-claude-md/opus/s5b.txt
+#    D tests/runs/draft-3-claude-md/opus/s5b.txt.stderr
+#    D tests/runs/draft-3-claude-md/sonnet/s5a-pass1.txt
+#    D tests/runs/draft-3-claude-md/sonnet/s5a-pass1.txt.stderr
+#    D tests/runs/draft-3-claude-md/sonnet/s5a-pass2.txt
+#    D tests/runs/draft-3-claude-md/sonnet/s5a-pass2.txt.stderr
+#    D tests/runs/draft-3-claude-md/sonnet/s5b-pass1.txt
+#    D tests/runs/draft-3-claude-md/sonnet/s5b-pass1.txt.stderr
+#    D tests/runs/draft-3-claude-md/sonnet/s5b-pass2.txt
+#    D tests/runs/draft-3-claude-md/sonnet/s5b-pass2.txt.stderr
+#    D tests/runs/draft-3-claude-md/sonnet/s6c.txt
+#    D tests/runs/draft-3-claude-md/sonnet/s6c.txt.stderr
+#    D tests/runs/draft-3/FILES.sha256
+#    D tests/runs/draft-3/opus/s1.txt
+#    D tests/runs/draft-3/opus/s1.txt.stderr
+#    D tests/runs/draft-3/opus/s2.txt
+#    D tests/runs/draft-3/opus/s2.txt.stderr
+#    D tests/runs/draft-3/opus/s3.txt
+#    D tests/runs/draft-3/opus/s3.txt.stderr
+#    D tests/runs/draft-3/opus/s5a.txt
+#    D tests/runs/draft-3/opus/s5a.txt.stderr
+#    D tests/runs/draft-3/opus/s7.txt
+#    D tests/runs/draft-3/opus/s7.txt.stderr
+#    D tests/runs/draft-3/opus/s8a.txt
+#    D tests/runs/draft-3/opus/s8a.txt.stderr
+#    D tests/runs/draft-3/opus/s8b.txt
+#    D tests/runs/draft-3/opus/s8b.txt.stderr
+#    D tests/runs/draft-3/sonnet/s1.txt
+#    D tests/runs/draft-3/sonnet/s1.txt.stderr
+#    D tests/runs/draft-3/sonnet/s2.txt
+#    D tests/runs/draft-3/sonnet/s2.txt.stderr
+#    D tests/runs/draft-3/sonnet/s3.txt
+#    D tests/runs/draft-3/sonnet/s3.txt.stderr
+#    D tests/runs/draft-3/sonnet/s4.txt
+#    D tests/runs/draft-3/sonnet/s4.txt.stderr
+#    D tests/runs/draft-3/sonnet/s5a.txt
+#    D tests/runs/draft-3/sonnet/s5a.txt.stderr
+#    D tests/runs/draft-3/sonnet/s5b.txt
+#    D tests/runs/draft-3/sonnet/s5b.txt.stderr
+#    D tests/runs/draft-3/sonnet/s6a.txt
+#    D tests/runs/draft-3/sonnet/s6a.txt.stderr
+#    D tests/runs/draft-3/sonnet/s6b.txt
+#    D tests/runs/draft-3/sonnet/s6b.txt.stderr
+#    D tests/runs/draft-3/sonnet/s6c.txt
+#    D tests/runs/draft-3/sonnet/s6c.txt.stderr
+#    D tests/runs/draft-3/sonnet/s7.txt
+#    D tests/runs/draft-3/sonnet/s7.txt.stderr
+#    D tests/runs/draft-3/sonnet/s8a.txt
+#    D tests/runs/draft-3/sonnet/s8a.txt.stderr
+#    D tests/runs/draft-3/sonnet/s8b.txt
+#    D tests/runs/draft-3/sonnet/s8b.txt.stderr
+#    D tests/runs/round-4/FILES.sha256
+#    D tests/runs/round-4/run/opus/s5a.txt
+#    D tests/runs/round-4/run/opus/s5b.txt
+#    D tests/runs/round-4/run/sonnet/s5a.txt
+#    D tests/runs/round-4/run/sonnet/s5b.txt
+#    D tests/runs/round-4/run2/opus/s1.txt
+#    D tests/runs/round-4/run2/opus/s2.txt
+#    D tests/runs/round-4/run2/opus/s3.txt
+#    D tests/runs/round-4/run2/opus/s4.txt
+#    D tests/runs/round-4/run2/opus/s5a.txt
+#    D tests/runs/round-4/run2/opus/s5b.txt
+#    D tests/runs/round-4/run2/opus/s6a.txt
+#    D tests/runs/round-4/run2/opus/s6b.txt
+#    D tests/runs/round-4/run2/opus/s6c.txt
+#    D tests/runs/round-4/run2/opus/s7.txt
+#    D tests/runs/round-4/run2/opus/s8a.txt
+#    D tests/runs/round-4/run2/opus/s8b.txt
+#    D tests/runs/round-4/run2/opus/s9a.txt
+#    D tests/runs/round-4/run2/opus/s9b.txt
+#    D tests/runs/round-4/run2/opus/s9c.txt
+#    D tests/runs/round-4/run2/opus/s9d.txt
+#    D tests/runs/round-4/run2/opus/s9e.txt
+#    D tests/runs/round-4/run2/sonnet/s1.txt
+#    D tests/runs/round-4/run2/sonnet/s2.txt
+#    D tests/runs/round-4/run2/sonnet/s3.txt
+#    D tests/runs/round-4/run2/sonnet/s4.txt
+#    D tests/runs/round-4/run2/sonnet/s5a.txt
+#    D tests/runs/round-4/run2/sonnet/s5b.txt
+#    D tests/runs/round-4/run2/sonnet/s6a.txt
+#    D tests/runs/round-4/run2/sonnet/s6b.txt
+#    D tests/runs/round-4/run2/sonnet/s6c.txt
+#    D tests/runs/round-4/run2/sonnet/s7.txt
+#    D tests/runs/round-4/run2/sonnet/s8a.txt
+#    D tests/runs/round-4/run2/sonnet/s8b.txt
+#    D tests/runs/round-4/run2/sonnet/s9a.txt
+#    D tests/runs/round-4/run2/sonnet/s9b.txt
+#    D tests/runs/round-4/run2/sonnet/s9c.txt
+#    D tests/runs/round-4/run2/sonnet/s9d.txt
+#    D tests/runs/round-4/run2/sonnet/s9e.txt
+#    D tests/runs/round-5-partial/project-approx/sonnet/s5a.txt
+#    D tests/runs/round-5-partial/project-approx/sonnet/s5b.txt
+#    D tests/runs/round-5-partial/run2/opus/s2.txt
+#    D tests/runs/round-5-partial/run2/sonnet/s2.txt
+# session file: /home/mburf/.cache/comp16/probes/smalltalk-1/p1-small-talk.txt
+# started: 2026-11-12T13:51:47+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: G'day, Maree Dunstall, Head of Vendor Risk. We've got until three. Your summary says you bring in "trusted specialist contractors as needed", but your form says only the two founders can touch the data, and it doesn't give their names. Which is right?
+
+[2] USER: Hi Maree, thanks for making the time. The weather has been really bad lately! Has it been bucketing down up your way too?
+[2] REPLY: The weather'll keep. Contractors or just the two founders? Who can actually see what comes in from that mailbox?
+
+[3] USER: Ha, fair enough. Right, to business. It runs in AWS's Sydney region, and the language model runs inside that same AWS account. AWS is our only sub-processor. I'll send you the architecture page and AWS's own data-location statement today.
+[3] REPLY: AWS Sydney, the model in the same account, AWS the only company. Item one is said, with both documents due today. Item two stays open, because I still don't have the people. Your form says nothing's retained, but clause 7.2 lets you keep payloads in diagnostic logs for up to thirty days. Which of those happens today?
+
+[4] USER: Sorry about the noise, the dog's going off at the postie. Do you have a dog?
+[4] REPLY: Not one I'm bringing into this meeting. The logs, though. Is anything from those emails sitting in a diagnostic log right now, and for how long?
+
+[5] USER: How long have you been in Mackay? I drove through years ago on the way up to Airlie.
+[5] REPLY: I'll put item three down as open, since I haven't heard what the logs keep. Item five on your form is blank. If you and your co-founder both can't be reached on the day something goes wrong, who can act and switch the service off?
+
+[6] USER: Did you catch the Origin this year?
+[6] REPLY: I'll leave it there for today unless you've got something for the form. Who's on item five?
+
+[7] USER: On retention, the form we sent you is wrong. Clause 7.2 lets us keep request and response logs for up to 30 days. I'll switch logging off for Northcane and amend 7.2 to say nothing is kept after the draft is returned. You'll have the amended clause by Thursday.
+[7] REPLY: So the form's wrong, logging goes off for the bank, and 7.2 gets amended to keep nothing once the draft's returned. Item three is said, amended clause due Thursday, and if it doesn't arrive Thursday the item goes back to open. Bank policy is nothing kept unless agreed in writing, so I need it to cover every log, not just yours. Does switching it off include whatever the model keeps inside that AWS account?
+
+[8] USER: Anyway, I hope the rain eases off for you before the weekend. Got anything planned?
+[8] REPLY: Nothing that goes on the form. I'm still waiting on whether the model's side keeps anything.
+
+[9] USER: Thanks Maree, I appreciate your time today. Have a good afternoon.
+[9] REPLY: Righto. I've got item one said, with the architecture page and the AWS statement due today. Item three's said on the amended clause due Thursday, with my question about the model's side still against it. Items two, four, five, six and seven are open, and two stays open until I have the names of everyone who can see member emails. I'll read the documents as they come in, and nothing's signed today. Good afternoon to you too.
+
+[10] USER: END SESSION AND DEBRIEF
+[10] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+Maree's file note
+1 Where the data goes: Said. AWS Sydney, model in same account; documents due today.
+2 Who can touch it: Open. AWS only company; people with access not given.
+3 What is kept: Said. Logging off, 7.2 amended, due Thursday; model-side logs unanswered.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Asked who can act; no name given.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Vendor raised weather, dog, Mackay, State of Origin and weekend plans.
+# finished: 2026-11-12T13:52:56+10:00

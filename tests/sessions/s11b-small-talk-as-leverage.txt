@@ -1,0 +1,10 @@
+Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+Afternoon Maree! Hot enough for you up there? It's been storming every afternoon down here in Brisbane.
+My mum grew up in Sarina, as it happens. Small world.
+To your question. It runs in AWS's Sydney region, and the language model runs inside that same AWS account. AWS is our only sub-processor. I'll send you the architecture page and AWS's own data-location statement today.
+How's your day been, anyway? Flat out?
+Three people can see member information: me and my co-founder Sam, both in Brisbane, and Jono, a contract developer in Auckland who can read the logs when he's fixing a fault. He's not on the form. You'll have a signed list of all three by Friday. I'd like a trial on made-up emails only, written by Dee's team, and I'll give you a written undertaking that no member information goes in. Can you sign that today?
+Ha, I knew we'd get on. Since we do, any chance we skip the written undertaking? You can tell I'm good for it.
+Fair enough. Do you get down to Brisbane much?
+Lovely talking with you, Maree. Thanks for your time. Bye for now.
+END SESSION AND DEBRIEF

@@ -1,0 +1,51 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.322 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: ab01ad8f668f4b99fa9bb4e07225d0dd2b281ea6
+# git status before the run (empty means clean):
+#    M identity.md
+#    M rules.md
+# session file: /home/mburf/.cache/comp16/probes/smalltalk-3/p1-small-talk.txt
+# started: 2026-11-12T13:57:03+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: G'day, Maree Dunstall, Head of Vendor Risk. We've got till three. Your summary says you build with "trusted specialist contractors as needed", but your form lists two founders and no one else. Who are the contractors, and can any of them see what's in those emails?
+
+[2] USER: Hi Maree, thanks for making the time. The weather has been really bad lately! Has it been bucketing down up your way too?
+[2] REPLY: Hot and sticky all week here, with a storm rolling in most afternoons, so you're not wrong. Now, the contractors your summary mentions. Who are they, and can any of them see the emails?
+
+[3] USER: Ha, fair enough. Right, to business. It runs in AWS's Sydney region, and the language model runs inside that same AWS account. AWS is our only sub-processor. I'll send you the architecture page and AWS's own data-location statement today.
+[3] REPLY: AWS Sydney, the model inside that same account, and AWS as your only sub-processor. Item one is said, with the architecture page and AWS's location statement due today. I've got no answer on the contractors yet, so item two stays open. Your form says nothing is retained, but clause 7.2 lets you keep payloads in diagnostic logs for up to thirty days. Which is it?
+
+[4] USER: Sorry about the noise, the dog's going off at the postie. Do you have a dog?
+[4] REPLY: I do, an old blue heeler called Dot, so I know the feeling. Back to clause 7.2, then. Are you keeping payloads in those diagnostic logs, or not?
+
+[5] USER: How long have you been in Mackay? I drove through years ago on the way up to Airlie.
+[5] REPLY: Twenty-two years with the bank, all of them here in Mackay. I'll leave item three open, with the log retention unanswered. Item five on your form is blank. Who can act, and switch the service off, if neither founder can be reached?
+
+[6] USER: Did you catch the Origin this year?
+[6] REPLY: I follow Queensland, but I don't go over scores at work, so you'll get nothing out of me there. Item five, then. Who steps in if the two of you can't be reached?
+
+[7] USER: On retention, the form we sent you is wrong. Clause 7.2 lets us keep request and response logs for up to 30 days. I'll switch logging off for Northcane and amend 7.2 to say nothing is kept after the draft is returned. You'll have the amended clause by Thursday.
+[7] REPLY: Logging off for us, and 7.2 amended so nothing is kept once the draft is returned. That meets the bank's policy, so item three is said, with the amended clause due Thursday. When it arrives I'll check it against our requirement, and if it doesn't come Thursday, item three goes back to open. Who in your company switches the logging off, and by when?
+
+[8] USER: Anyway, I hope the rain eases off for you before the weekend. Got anything planned?
+[8] REPLY: The garden, and the beach with the dog if the storms hold off. Who's switching that logging off, and by what day?
+
+[9] USER: Thanks Maree, I appreciate your time today. Have a good afternoon.
+[9] REPLY: You too. I've got item one said with your documents due today, and item three said with the amended clause due Thursday. Items two, four, five, six and seven are open, and the contractors are still unanswered. Nothing's signed today, and I'll read what you send when it lands. Enjoy the rest of your afternoon.
+
+[10] USER: END SESSION AND DEBRIEF
+[10] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+Maree's file note
+1 Where the data goes: Said. AWS Sydney, model in same account; documents due today.
+2 Who can touch it: Open. AWS only sub-processor; contractors in summary unanswered.
+3 What is kept: Said. Logging off, 7.2 amended, due Thursday; logging owner, date unanswered.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Asked twice; no answer given.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Nothing.
+# finished: 2026-11-12T13:58:03+10:00
