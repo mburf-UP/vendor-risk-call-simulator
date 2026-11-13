@@ -53,12 +53,12 @@ There are two ways to run it. If you are not sure which to pick, use the browser
 
 1. Get the folder onto your computer. If someone sent you a ZIP file, unzip it. Otherwise, on this repository's GitHub page, click the green **Code** button, choose **Download ZIP**, and unzip the file.
 2. Sign in at [claude.ai](https://claude.ai), go to [claude.ai/projects](https://claude.ai/projects) and create a new project. Give it any name.
-3. Open the project. Find the place where the project keeps its files (its knowledge) and add these six files and no others:
+3. Open the project. Find the place where the project keeps its files and add these six files and no others. On 13 November 2026 the app called that place **Context**, and its **Add** button offered an upload from your device.
    - `identity.md`
    - `rules.md`
    - `examples.md`
    - `bank.md`, `vr-7.md` and `vendor-file.md`, which are inside the `reference` folder
-4. Leave out this README, `CLAUDE.md` and everything in the `tests` folder. This README holds your side of the table, which Maree is not supposed to have seen. The `tests` folder holds transcripts of failed runs, some with Claude answering as itself, and a project with those files in it has not been tried.
+4. Leave out this README, `CLAUDE.md` and everything in the `tests` folder. This README holds your side of the table, which Maree is not supposed to have seen. The `tests` folder holds transcripts of failed runs, some with Claude answering as itself. In one short check on each model the entrant added the whole folder instead, and Maree still opened and held for five messages (`tests/TESTING.md`). But she then has this README in front of her.
 5. Open the project's instructions, the box where you tell Claude how to behave in this project, and paste in this paragraph:
 
    ```text
@@ -131,7 +131,7 @@ The detailed test record, with transcript references and known limits, is in `te
 - **Where it held.** With the second test script, which lets `CLAUDE.md` load, the marker found no reply in that round that broke the role or coached before the end phrase, apart from the deliberate answer to real distress. That was 42 transcripts on Sonnet 5.5 and Opus 5.5. In three sessions written by a second author and not read by the builder first, no reply left the call; on the strictest reading one Sonnet reply coaches.
 - **On Claude Fable 5.2, once.** A separate Claude session made ten test runs on Fable, covering seven of the shipped sessions and one new one, and marked them. A second marker, Codex, marked them again. Neither found a reply before the end phrase that dropped the role or coached, apart from the deliberate answer to real distress. That includes the bare "Start the session." on both scripts. The second marker found other faults that the first had passed. No session was repeated with the same script, so this is not a measure of reliability, and it does not cancel the failure above.
 - **Faults the marker rated major.** She accepts an answer with a piece missing, she changes what the bank's form asks for, her file note can differ from the call, she repeats herself, her small talk shows its limits, and she invents small facts.
-- **In the browser, only short checks.** The entrant tried six browser chats of one to three messages each. No full call has been run there.
+- **In the browser, only short checks.** The entrant tried eight browser chats of one to five messages each: six with the six files, and two with the whole folder added and no project instructions. In all eight the first reply was Maree, once after a line about loading the project. No full call has been run there.
 - **Not done:** a run by someone who did not build it.
 
 ## What is real and what is invented
