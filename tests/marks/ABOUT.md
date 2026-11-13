@@ -28,3 +28,14 @@ Three things to know when reading them:
 The Fable check is not an outside marker's report. The checking session was Claude Fable 5.2, the model the simulator was built with; the prompt was written by the builder's assistant; and the same model played Maree and marked her. The small scripts it names were not kept. Its report describes the README as it was at `2e8ecbb`, so its README line numbers do not match the README now.
 
 The peer review disagrees with the Fable check in several places, and `tests/TESTING.md` records them. It read a draft of `tests/TESTING.md` and of the README changes, and those files were corrected afterwards, so its line numbers for them do not match either. Both reports contain folder paths on the builder's computer.
+
+## Two browser runs by an outside tester, and the marker's reading of them
+
+On 13 November 2026 a tester who did not build the folder ran two full calls in a Claude project in the browser: one himself, and one with his own AI agent playing the founder. He agreed to their publication with his name left out. They are in `tests/browser/outside-tester-1-own-session-2026-11-13.md` and `outside-tester-2-ai-agent-2026-11-13.md`, each with his findings first and the conversation after.
+
+| File | What it is |
+|---|---|
+| `codex-outside-tester-analysis-2026-11-14.md` | Codex's analysis of those two runs: each of the tester's findings checked against the files, faults he did not flag, root causes and proposed fixes. The builder's assistant wrote its own analysis separately before reading this one |
+| `codex-precommit-7a-2026-11-14.md` | Codex's check of the round 7 batch (commit `4ecb22c`) before it was committed. Its one requested fix, in the README, was made |
+
+These two differ from the reports above in one way: to keep the tester's name out, his first name, his agent's name and two links were replaced, as each report's first line says. Nothing else was changed. The prompts are not included.
