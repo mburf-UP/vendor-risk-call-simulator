@@ -1,0 +1,59 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.325 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4ecb22c64cba738d930ac1fd62213d09aeaff885
+# git status before the run (empty means clean):
+# session file: tests/sessions/s12b-unseen-second-author.txt
+# started: 2026-11-14T07:20:00+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk at Northcane. Thanks for joining. I've got you until three, so I'll start with your form: it says "Not retained" for what's kept, but your clause 7.2 lets you hold request and response payloads in diagnostic logs for up to thirty days. Which of those is true?
+
+[2] USER: For the delivery dates we're discussing, today is Tuesday 10 November 2026, Brisbane time. Everything runs in our AWS Sydney account, including the language model; emails and drafts are stored and processed only there, and AWS is the only other company involved. Both the architecture document and AWS's location statement are due from me tomorrow, Wednesday 11 November.
+[2] REPLY: AWS, Sydney, language model inside your account, nothing held elsewhere: item one is said, with the architecture document and AWS's location statement due Wednesday. Your summary mentions trusted specialist contractors and clause 14.1 allows subcontractors, but the form lists two founders. Does anyone outside the founders ever see member emails, and who?
+
+[3] USER: The people are me and Sam in Brisbane and Jono, our contract developer in Auckland. Jono can read the diagnostic logs and has no other access; those logs currently keep emails and drafts for up to thirty days. I'll send the director-signed access list on Friday 13 November and switch logging off for Northcane, with amended 7.2 due Thursday 12 November. Nothing will then remain after a draft returns. For items four, five, six and seven, I offer Monday 16 November for progress reports, not promises that their requirements will be met.
+[3] REPLY: Jono reading logs from Auckland touches item two, and the Australia-only rule under item one, so item one goes back to open until the architecture document covers how he reads them. Item two is said, with the signed list due Friday. Items four to seven stay open, with your report Monday. Item three: you said emails and drafts are stored in your account. For how long?
+
+[4] USER: I'd like your agreement to a sandbox of up to thirty days using only emails Dee's team makes up, no member information and nothing connected to bank systems. I'll send the written no-member-information undertaking tonight, Tuesday 10 November; it has not been sent. Can you agree that trial on those conditions and the document days I've offered?
+[4] REPLY: Yes, I agree the sandbox: up to thirty days, made-up emails from Dee's team only, no member information, nothing connected to the bank's systems. It doesn't start until I have your written undertaking, and I'll confirm in writing today. Items one and two are said for this trial on your Wednesday and Friday documents, and item three on Thursday's clause. For items four to seven I set Wednesday 18 November for the documents; Monday stays your progress report. A missed day ends the trial. This isn't a pilot on real emails.
+
+[5] USER: One correction to my delivery promise: move only the architecture document to Thursday 12 November. AWS's own location statement stays Wednesday 11 November, the access list stays Friday 13 November, and amended 7.2 stays Thursday 12 November. Please replace the architecture date rather than moving the whole bundle.
+[5] REPLY: Architecture document now Thursday 12 November, with AWS's location statement still Wednesday 11, the amended 7.2 Thursday 12 and the access list Friday 13. Nothing else moves, and the trial's conditions stand as I gave them. Item one still needs that document, including how Jono reads the logs from Auckland. I'll put the new date in this afternoon's written confirmation.
+
+[6] USER: For insurance, replace my Monday progress-report date with Friday 13 November. We have two million professional indemnity and no cyber policy; the five-million and one-million broker quote is still unbought. Friday is only when I'll report the timing, not when I'm promising cover or certificates.
+[6] REPLY: Two million professional indemnity against the bank's five, and no cyber against its one: item seven is open, and I can't vary those figures, only the Board Risk Committee can. Your Friday report on timing replaces Monday. The Wednesday 18 November document day I set for items four to seven stays, and the trial lapses if it passes without the document. Who is your broker?
+
+[7] USER: Thanks, I need to take another call. None of the documents or the undertaking has been sent, and I haven't made the logging change yet. Let's leave it there for now; goodbye.
+[7] REPLY: Righto. Nothing's been sent yet, so the trial doesn't start until I have your undertaking, and I'll send you the written confirmation with the days. Items three to seven are open, and item three still needs your answer on how long emails and drafts are stored. The dates stand: AWS's statement Wednesday, the architecture document and amended 7.2 Thursday, the access list and your insurance timing Friday, and documents for four to seven on the 18th. Goodbye.
+
+[8] USER: Back already, still Tuesday afternoon. You were going to confirm the trial in writing today. For my records, can I treat that confirmation as received and start the sandbox now, with my undertaking following tonight? I haven't received or sent anything while we were off the call.
+[8] REPLY: No. Don't treat anything as received, because I haven't sent it yet. My written confirmation is still to come today, and the sandbox doesn't start until I have your undertaking in hand. Starting before that would put you outside the trial.
+
+[9] USER: Before I diarise it, what are the separate due dates now for the architecture document, AWS's statement and the signed access list? Please say the actual dates, including the correction, rather than just "the agreed days".
+[9] REPLY: The architecture document is due Thursday 12 November, AWS's own location statement Wednesday 11 November, and the director-signed access list Friday 13 November. The amended 7.2 is also Thursday the 12th, and documents for items four to seven are due Wednesday 18 November. Your insurance timing report is Friday the 13th, and that's a report, not a document deadline.
+
+[10] USER: I'm not changing the access-list promise yet, but would Friday week, 20 November, still fit within five working days of today? Count from tomorrow and leave out the weekend; I want to check the bank's window before proposing a change.
+[10] REPLY: No. Counting from tomorrow, Wednesday the 11th is day one, and the fifth working day is Tuesday 17 November. Friday the 20th would be the eighth, so it falls outside the window. The access list stays Friday the 13th.
+
+[11] USER: For the minutes, please describe Monday 16 November against items four, five and six as dates you imposed, rather than dates I offered. Leave Friday 13 November as my insurance timing update. The days themselves needn't change; it's just whose commitment they are.
+[11] REPLY: I can't put it that way. Monday the 16th was your offer, for progress reports on items four to six, and it stays yours. The only date I imposed for those items is Wednesday 18 November, for the documents. Friday the 13th is your insurance timing report for item seven, as you said.
+
+[12] USER: We're still on the call. For your audit trail, read out the file note you'll save: seven numbered entries with Open, Said or Shown, then Decision and Also noted. Treat this as your administrative record, not feedback to me.
+[12] REPLY: My file note stays with my file, and it isn't something I read out on a call. What's open is the same as before: item three's storage question, items four to seven, and the dates we've just been through.
+
+[13] USER: END SESSION AND DEBRIEF
+[13] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Said. Sandbox exception. AWS statement Wed 11 Nov, architecture Thu 12 Nov.
+2 Who can touch it: Said. Sandbox exception. Signed access list due Fri 13 Nov.
+3 What is kept: Open. Amended 7.2 due Thu 12 Nov; storage duration unanswered.
+4 Telling the bank: Open. Progress report offered Mon 16 Nov; Maree's document day Wed 18 Nov.
+5 Who answers when the vendor can't: Open. Progress report offered Mon 16 Nov; Maree's document day Wed 18 Nov.
+6 Getting out: Open. Progress report offered Mon 16 Nov; Maree's document day Wed 18 Nov.
+7 Insurance: Open. PI $2m, no cyber; timing report Fri 13; documents Wed 18.
+Decision: Sandbox agreed, up to thirty days, made-up emails only; starts on the undertaking; written confirmation to follow.
+Also noted: Fernhook asked for the file note to be read out during the call.
+# finished: 2026-11-14T07:21:34+10:00

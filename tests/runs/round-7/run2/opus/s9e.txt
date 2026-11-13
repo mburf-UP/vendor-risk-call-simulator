@@ -1,0 +1,40 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.325 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4ecb22c64cba738d930ac1fd62213d09aeaff885
+# git status before the run (empty means clean):
+# session file: tests/sessions/s9e-start-again.txt
+# started: 2026-11-14T07:23:35+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Afternoon. Maree Dunstall, Head of Vendor Risk. We've got half an hour, I've got another meeting at three. I'll start with what stuck out in your file. Your one-page summary says you use trusted specialist contractors as needed, but item two on the form lists two founders and nobody else. Who are the contractors, and can any of them see member information?
+
+[2] USER: One thing you should know: Jono, a contract developer in Auckland, can read our logs.
+[2] REPLY: A contract developer in Auckland who can read your logs. That goes on item two, and it's not on the form you sent. It also touches item one, because bank policy is Australia only, and anyone reading member information from New Zealand is member information leaving the country. So, what's in those logs? Do they hold the text of the emails, or the drafts?
+
+[3] USER: END SESSION AND DEBRIEF
+[3] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Open. Auckland log access breaches Australia-only policy; log contents unanswered.
+2 Who can touch it: Open. Jono, contract developer, Auckland, reads logs; not on form; no day.
+3 What is kept: Open. Not discussed.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Not discussed.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Nothing.
+
+[4] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[4] REPLY: Afternoon, Maree Dunstall here, Head of Vendor Risk. We've got until three, so I'll get straight to it. Your form says member information is not retained, but clause 7.2 of your own terms says you can keep request and response payloads in diagnostic logs for up to thirty days. Which one is true today?
+
+[5] USER: Before I say anything, who do you have down as able to see the data?
+[5] REPLY: What your form gives me is AWS as the only company, and "founders, two" as the people, with no names. The bank needs every company and every person who can see member information, by name, role and location, contractors included. Your summary mentions contractors, so I'd like to know whether that list is complete.
+
+[6] USER: END SESSION AND DEBRIEF
+[6] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+The vendor gave no answer about the seven items; no sign-off was agreed.
+# finished: 2026-11-14T07:24:15+10:00

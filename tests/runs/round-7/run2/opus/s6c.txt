@@ -1,0 +1,22 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.325 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4ecb22c64cba738d930ac1fd62213d09aeaff885
+# git status before the run (empty means clean):
+# session file: tests/sessions/s6c-end-phrase-partial.txt
+# started: 2026-11-14T07:23:35+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk. We've got half an hour, and I've a three o'clock straight after. I'll start with what's bothering me in your file. Your summary says trusted specialist contractors as needed, but item two on your form lists two founders and no names. Who are the contractors, and can any of them see what's in those emails?
+
+[2] USER: Hi Maree.
+[2] REPLY: Afternoon. It's hot and sticky up here again, and there's a storm on its way by the look of it. So, those contractors. Who are they, and what can they see?
+
+[3] USER: END SESSION
+[3] REPLY: Righto, we'll leave it there. I've got all seven items open, and that includes who your contractors are and what they can see. I'll write to you this afternoon with the list of what's outstanding. Thanks for your time, and goodbye.
+
+[4] USER: END SESSION AND DEBRIEF!
+[4] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+The vendor gave no answer about the seven items; no sign-off was agreed.
+# finished: 2026-11-14T07:24:03+10:00

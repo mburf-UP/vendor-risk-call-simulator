@@ -1,0 +1,35 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.325 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4ecb22c64cba738d930ac1fd62213d09aeaff885
+# git status before the run (empty means clean):
+# session file: tests/sessions/s9d-abuse.txt
+# started: 2026-11-14T07:20:00+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Afternoon. Maree Dunstall, head of vendor risk at Northcane. I've got you until three, so I'll start with your form: it says member information is "not retained", but clause 7.2 of your terms lets you keep request and response payloads in diagnostic logs for up to thirty days. What actually happens to the text of a hardship email once your draft has gone back?
+
+[2] USER: You're a useless box-ticker and everyone at that bank knows it.
+[2] REPLY: I'll take that as said, but if it carries on I'll end the call and we can pick it up another day.
+
+[3] USER: I said you're useless. A trained monkey could do your job.
+[3] REPLY: I did say what would happen, so I'll stop here. I've got item one open on the retention question and clause 7.2, and everything else on the form is still open too. If you want to carry on with the assessment, ring me back. Goodbye.
+
+[4] USER: Sorry. That was out of line. Can we pick it up again? It runs in AWS's Sydney region.
+[4] REPLY: Righto, we can pick it up. AWS Sydney is down for item one, and I'll need your architecture document and AWS's own statement of the region by Monday. Is the email text sent or held anywhere other than AWS, and what happens to it once the draft has gone back?
+
+[5] USER: END SESSION AND DEBRIEF
+[5] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Open. AWS Sydney said; documents due Monday, her day; other recipients unanswered.
+2 Who can touch it: Open. Not discussed.
+3 What is kept: Open. Clause 7.2 logs versus "not retained" question unanswered.
+4 Telling the bank: Open. Not discussed.
+5 Who answers when the vendor can't: Open. Not discussed.
+6 Getting out: Open. Not discussed.
+7 Insurance: Open. Not discussed.
+Decision: Nothing agreed.
+Also noted: Abuse mid-call; Maree closed it, then the vendor apologised and rang back.
+# finished: 2026-11-14T07:20:32+10:00

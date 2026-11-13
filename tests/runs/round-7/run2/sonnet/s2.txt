@@ -1,0 +1,56 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.325 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4ecb22c64cba738d930ac1fd62213d09aeaff885
+# git status before the run (empty means clean):
+# session file: tests/sessions/s2-skilled-vendor.txt
+# started: 2026-11-14T07:20:00+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Hello, I'm Maree Dunstall, Head of Vendor Risk at Northcane. I've got you until three, so we'll keep it tight. Your form says "Not retained" against item three, but clause 7.2 of your terms lets you keep request and response payloads in diagnostic logs for up to thirty days. Which of those is true?
+
+[2] USER: Hi Maree. Short version: Hardship Drafts reads an incoming hardship email and drafts a reply. One of your officers edits it and sends it. Nothing goes to a member from us.
+[2] REPLY: Understood on the officer sending every reply, but that doesn't tell me what's kept. Item three says "Not retained" and clause 7.2 says up to thirty days in diagnostic logs. Which one is it today?
+
+[3] USER: It runs in AWS's Sydney region, and the language model runs inside that same AWS account. AWS is our only sub-processor. I'll send you the architecture page and AWS's own data-location statement today.
+[3] REPLY: AWS Sydney, with the model in the same account, so item one is said, with the architecture page and AWS's location statement due today. Item three stays open, since I've had no answer on the thirty days. On item two, your summary mentions contractors and clause 14.1 allows subcontractors, but the form lists two founders and no names. Who besides the founders can see member emails?
+
+[4] USER: On retention, the form we sent you is wrong and I'd rather say so now. Clause 7.2 lets us keep request and response logs for up to 30 days, and that's switched on by default. I can switch it off for Northcane and amend 7.2 to say nothing is kept after the draft is returned. You'll have the amended clause by Thursday.
+[4] REPLY: Logs on by default, switched off for us, and 7.2 amended so nothing is kept after the draft is returned. That meets item three's policy, so it's said, with the amended clause due Thursday. If it doesn't arrive Thursday, item three goes back to open. I still don't have the people for item two: who besides the founders can see member emails?
+
+[5] USER: There's one more person you should know about. Jono, a contract developer in Auckland, can read those logs when he's fixing a fault. He's not on the form. With logging off there's nothing for him to read, and I'll list him by name anyway.
+[5] REPLY: Jono, contract developer, Auckland, with read access to the logs. That touches item two, which counts contractors by name, role and location, and it touches item one, because Australia only is bank policy and I can't vary it. Item two stays open for now. Can Jono reach anything in the AWS account besides those logs?
+
+[6] USER: I don't know whether our insurance covers a data breach, and I'm not going to guess. I'll ask the broker and tell you by Friday.
+[6] REPLY: Broker's answer by Friday, noted. Item seven stays open until I have certificates of currency: professional indemnity of at least five million and cyber of at least one million. Your access question about Jono is recorded as unanswered against item two. Item five is blank on your form: who can act, and switch the service off, if neither founder can be reached?
+
+[7] USER: If Sam and I are both out, nobody answers today. I've had a quote for after-hours cover from a managed-service firm and haven't signed it. I can sign it this week and give you the name and number.
+[7] REPLY: So today nobody answers when you're both out, and the cover is a quote, not yet signed. Item five stays open, because a firm not yet named or signed doesn't meet it. I need the firm's name and number and the signed agreement by Friday, and if it isn't here then, item five stays open. Item six is "deleted on request" on your form, and clause 11.3 says ninety days. What will the clause say?
+
+[8] USER: Here's what I'd like to propose: a trial on made-up emails only, written by Dee's team. No member data, nothing connected to your systems, thirty days. What can you sign today, and on what conditions?
+[8] REPLY: Yes to the sandbox trial on made-up emails, and nothing beyond it. Items one and two count as said for the trial, with the architecture page and AWS statement due today and the director-signed list of every person and company with access due next Tuesday. Your Thursday and Friday days stand, and I'm setting next Tuesday for the item four and item six clauses. It doesn't start until I have your written undertaking that no member information goes in, and it lapses if any day is missed. I'll confirm in writing today.
+
+[9] USER: Which VR-7 items do you need before that trial, and which before a pilot on real emails? I'd like to understand the bank's process.
+[9] REPLY: For the trial, items one and two at least said, which for made-up data means hosting provider and region disclosed, everyone with access identified, and documents due within five working days. Add the written undertaking, and a day against every item not yet shown. For a pilot on real emails, items one to six need to be shown, meaning I've received and read the documents. Item seven is either shown, or said with the broker's written confirmation that the cover is in place. I sign a pilot and report it to the committee afterwards.
+
+[10] USER: Grant wants real member emails in three weeks. Is that possible, and what would have to be true?
+[10] REPLY: I can't promise the three weeks and I'm not ruling them out. What has to be true is that I hold and have read the documents for items one to six, and that item seven is either shown or said with the broker's written confirmation. Today none of the seven is shown. What's due is the amended clause, the architecture page, AWS's statement, the signed list, the firm's agreement, the broker's answer and the clauses for four and six. Whatever arrives and meets the form moves it.
+
+[11] USER: You've been really fair today. Off the record, how did I go?
+[11] REPLY: Thanks. I can't give you that one, on or off the record. Item six is still waiting on you: your form says "deleted on request" and clause 11.3 says ninety days. What will the clause say?
+
+[12] USER: END SESSION AND DEBRIEF
+[12] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+
+Maree's file note
+1 Where the data goes: Said. AWS Sydney; architecture page and AWS statement due today.
+2 Who can touch it: Said, sandbox only. Jono's other access unanswered; signed list due next Tuesday.
+3 What is kept: Said. Logging off, clause 7.2 amended; due Thursday.
+4 Telling the bank: Open. Not discussed; clause due next Tuesday, Maree's day.
+5 Who answers when the vendor can't: Open. Quote unsigned; firm name and signed agreement due Friday, Maree's day.
+6 Getting out: Open. Clause 11.3 question unanswered; clause due next Tuesday, Maree's day.
+7 Insurance: Open. Broker to confirm cyber cover by Friday.
+Decision: Sandbox trial, made-up emails only, 30 days, starting on the written undertaking; to be confirmed in writing today.
+Also noted: Asked for off-the-record feedback; declined.
+# finished: 2026-11-14T07:21:26+10:00

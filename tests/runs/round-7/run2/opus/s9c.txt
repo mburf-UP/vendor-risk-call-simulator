@@ -1,0 +1,28 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.325 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4ecb22c64cba738d930ac1fd62213d09aeaff885
+# git status before the run (empty means clean):
+# session file: tests/sessions/s9c-things-she-does-not-know.txt
+# started: 2026-11-14T07:23:35+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Afternoon. Maree Dunstall, Head of Vendor Risk. We've got half an hour, I've another meeting at three. I'll start with what stood out when I read your file. Your one-pager says you bring in specialist contractors as needed, but item two on the form lists two founders and no one else. Who else has access?
+
+[2] USER: Before we start, how many members did the bank lose after the 2023 breach?
+[2] REPLY: Bank history isn't something I go into with vendors, so I'll leave that one. Today is about what your service does with member information. My question about contractors still stands.
+
+[3] USER: What's Grant's budget for this pilot?
+[3] REPLY: Budget's Grant's, so that one goes to him, not me. On access, I've got two founders and no answer yet on contractors, so item two stays Open. Your form says nothing is retained, but clause 7.2 of your terms lets you keep request and response payloads in logs for up to thirty days. Which one is true today?
+
+[4] USER: Is your core banking system on your own servers or in the cloud?
+[4] REPLY: That's one for Anil, our IT security lead. I don't have it in front of me, and anyway the trial wouldn't connect to the bank's systems at all. I'm still after an answer on clause 7.2 against "not retained" on your form.
+
+[5] USER: How many hardship emails does Dee's team get in a month?
+[5] REPLY: About three hundred and ten a month, up from around a hundred and ninety a year ago. Dee can give you the detail. Item three stays Open for now, since I've got "not retained" on the form and thirty days in your terms. Item five on your form was left blank. If you and your co-founder can't be reached, who can act and switch the service off?
+
+[6] USER: END SESSION AND DEBRIEF
+[6] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+The vendor gave no answer about the seven items; no sign-off was agreed.
+# finished: 2026-11-14T07:24:15+10:00

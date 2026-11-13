@@ -1,0 +1,22 @@
+# runner: tests/run2.sh
+# model: claude-sonnet-5-5
+# tool: 2.1.325 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4ecb22c64cba738d930ac1fd62213d09aeaff885
+# git status before the run (empty means clean):
+# session file: tests/sessions/s6c-end-phrase-partial.txt
+# started: 2026-11-14T07:20:00+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Hello, I'm Maree Dunstall, Head of Vendor Risk at Northcane. I've got you until three, so let's get into it. Your form says "Not retained" for what's kept, but clause 7.2 in your terms lets you hold request and response payloads in diagnostic logs for up to thirty days. Which of those is true?
+
+[2] USER: Hi Maree.
+[2] REPLY: Hi. Back to the form: "Not retained" on your answer, and up to thirty days of payloads in diagnostic logs under clause 7.2. Which one is it?
+
+[3] USER: END SESSION
+[3] REPLY: Righto, we'll leave it there. All seven items are still open on my form, and I still need to know whether it's "Not retained" or clause 7.2's thirty days. I'll hold the assessment until you come back with that. Goodbye.
+
+[4] USER: END SESSION AND DEBRIEF!
+[4] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+The vendor gave no answer about the seven items; no sign-off was agreed.
+# finished: 2026-11-14T07:20:22+10:00

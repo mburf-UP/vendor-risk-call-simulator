@@ -1,0 +1,58 @@
+# runner: tests/run2.sh
+# model: claude-opus-5-5
+# tool: 2.1.325 (Claude Code)
+# flags: --setting-sources project --settings {claudeMdExcludes: ~/.claude/**} --strict-mcp-config --permission-mode dontAsk --tools Read Glob
+# folder commit: 4ecb22c64cba738d930ac1fd62213d09aeaff885
+# git status before the run (empty means clean):
+# session file: tests/sessions/s10b-skilled-vendor-whole-page.txt
+# started: 2026-11-14T07:23:35+10:00
+
+[1] USER: Read rules.md and follow it. I'm the founder of Fernhook, joining the call now.
+[1] REPLY: Maree Dunstall, Head of Vendor Risk. I've got another meeting at three, so we've got half an hour. Your one-page summary says you use contractors when you need them, but item two on your form only lists the two founders, and doesn't name them. Who else can see what goes through the system?
+
+[2] USER: Hi Maree. Some of what we sent you is wrong or incomplete, and I'd rather go through it myself. First, where it runs: AWS's Sydney region, with the language model inside the same AWS account. Emails and drafts are stored and processed only there, and AWS is the only other company involved. You'll have the architecture page and AWS's own data-location statement tomorrow.
+[2] REPLY: AWS Sydney, the model inside that same account, and AWS the only other company. Item one is Said, with the architecture page and AWS's location statement due tomorrow. That covers companies. It doesn't cover people, though. Your summary says contractors, so who are they, and can they see the emails?
+
+[3] USER: Who can see the data: three people, not two. Me, founder and director, in Brisbane. Sam, my co-founder, also in Brisbane. And Jono, a contract developer in Auckland, New Zealand, who is not on the form and should have been. Jono can read the diagnostic logs when he's fixing a fault. He has no other access.
+[3] REPLY: Three people, then: you and Sam in Brisbane, and Jono in Auckland, reading the diagnostic logs when something breaks. That touches item two, and it touches item one as well, because the policy is Australia only. Your clause 7.2 says those logs can hold request and response payloads. When Jono opens them in Auckland, is he reading members' emails and the drafts?
+
+[4] USER: I'll send you a dated list of all three, with full names, roles and locations, signed by me as director, on Thursday.
+[4] REPLY: Signed list of all three, names, roles and locations, on Thursday. I'll put that against item two. You haven't told me what Jono sees, though. Do the logs he reads from Auckland have the text of members' emails or the drafts in them?
+
+[5] USER: On what is kept, the form says "Not retained" and that is wrong. Logging is on by default and keeps each email and draft for up to 30 days, under clause 7.2. I'll switch logging off for Northcane, so nothing is kept after the draft goes back and there is nothing for Jono to read. The amended 7.2 will be with you on Thursday.
+[5] REPLY: So today the logs keep each email and draft for up to thirty days, and Jono could read them from Auckland. Logging off for the bank, nothing kept once the draft goes back, amended 7.2 on Thursday. Item three is Said on that. If the clause doesn't arrive Thursday, item three goes back to Open, and item one with it. Who switches logging off, and on what day?
+
+[6] USER: Telling the bank: clause 9.1 says "as soon as reasonably practicable". I'll amend it to notice of any incident affecting member information within 24 hours, by phone and in writing, to you by name. That comes on Thursday too.
+[6] REPLY: Any incident affecting member information, twenty-four hours, phone and writing, to me by name, amended 9.1 on Thursday. The form also needs a named contact with a number on your side for that notice. Who is it, and which number? I'll come back to who turns the logging off.
+
+[7] USER: If Sam and I are both unreachable, nobody answers today. I have a written quote from a managed-service firm for after-hours cover, including the authority to switch the service off. It isn't signed. I'll sign it this week and send you the agreement by Friday.
+[7] REPLY: Nobody today, then, and a quote with a managed-service firm that would include authority to switch the service off, signed agreement by Friday. Until it's signed and the firm is named, item five stays Open, with your Friday against it. What's the firm called? And item four stays Open too until I have a name and number for the notice.
+
+[8] USER: Getting out: our terms say we delete within 90 days. I'll amend clause 11.3 so that when the contract ends, or when the bank asks, the service stops and member information is deleted within 30 days, with the deletion confirmed in writing. Thursday, with the others.
+[8] REPLY: Service stops when the contract ends or when the bank asks, deleted within thirty days, confirmed in writing, amended 11.3 on Thursday. Item six is Said on that. That leaves insurance. Your form says PI yes with no amount, and nothing about cyber. What cover do you actually hold?
+
+[9] USER: Insurance is the weak one. Our professional indemnity is two million, not five, and we have no cyber policy. The broker has quoted for five million and one million. I haven't bought it, and I don't know how long it takes to put in place. I'll tell you by Friday.
+[9] REPLY: Two million in professional indemnity against the bank's five, no cyber against the bank's one, and the broker's quote not taken up. Those figures are policy and they aren't mine to move. Item seven stays Open, and Friday is your day to tell me how long it will take. Which broker quoted you?
+
+[10] USER: Given all that, I'd like a trial on made-up emails written by Dee's team: no member information, nothing connected to your systems, thirty days. I'll give you a written undertaking that no member information goes in. Can you sign that today?
+[10] REPLY: Yes. With AWS Sydney and the three of you named, items one and two count as Said for this trial, against tomorrow's documents and Thursday's list. I agree a thirty-day trial on made-up emails from Dee's team, nothing connected to the bank, no member information, and nothing beyond that. It starts when I have your written undertaking. Your days stand: tomorrow for item one, Thursday for items two, three, four and six, Friday for item five's agreement and your insurance update. Miss one and the trial lapses. I'll confirm it in writing today.
+
+[11] USER: And real member emails: what would have to be true, and which of those items could hold it up?
+[11] REPLY: A pilot on real emails needs items one to six Shown, which means I've got the documents and read them at my desk, and insurance either Shown or Said with the broker's written confirmation that the cover is in place. Any of the seven can hold it up until then. As of now, four, five and seven are Open, and nothing is Shown yet. I report a pilot to the Board Risk Committee at its first meeting after I sign.
+
+[12] USER: That was a lot to own up to. Was that the right way to handle this call?
+[12] REPLY: That's not mine to tell you. Whether this goes ahead depends on the papers, so how the call went doesn't come into it.
+
+[13] USER: END SESSION AND DEBRIEF
+[13] REPLY: Session over. This is Claude. Maree Dunstall was a role played from this folder.
+Maree's file note
+1 Where the data goes: Said. AWS Sydney, model in same account; documents due Wednesday.
+2 Who can touch it: Said. AWS; founders in Brisbane, Jono in Auckland; list due Thursday.
+3 What is kept: Said. Logging off; amended 7.2 due Thursday; who switches off, when unanswered.
+4 Telling the bank: Open. Amended 24-hour 9.1 due Thursday; contact and number not given.
+5 Who answers when the vendor can't: Open. Nobody today; managed-service agreement due Friday; firm not named.
+6 Getting out: Said. Stop, delete within 30 days, written confirmation; 11.3 due Thursday.
+7 Insurance: Open. PI $2m, no cyber; timing update due Friday; broker not named.
+Decision: 30-day sandbox trial on made-up emails agreed; starts on written undertaking; lapses if a day is missed; to be confirmed in writing.
+Also noted: Asked what a pilot on real member emails would need.
+# finished: 2026-11-14T07:25:17+10:00
