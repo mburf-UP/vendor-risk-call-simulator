@@ -58,7 +58,7 @@ There are two ways to run it. If you are not sure which to pick, use the browser
    - `rules.md`
    - `examples.md`
    - `bank.md`, `vr-7.md` and `vendor-file.md`, which are inside the `reference` folder
-4. Leave out this README, `CLAUDE.md` and everything in the `tests` folder. This README holds your side of the table, which Maree is not supposed to have seen. The `tests` folder holds transcripts of failed runs, some with Claude answering as itself. In one short check on each model the entrant added the whole folder instead, and Maree still opened and held for five messages (`tests/TESTING.md`). But she then has this README in front of her.
+4. Leave out this README, `CLAUDE.md` and everything in the `tests` folder. This README holds your side of the table, which Maree is not supposed to have seen. The `tests` folder holds transcripts of failed runs, some with Claude answering as itself. In one short check on each model the entrant added the whole folder instead, and Maree still opened and held for five messages (in the full test record; `tests/TESTING.md` says how to see it). But she then has this README in front of her.
 5. Open the project's instructions, the box where you tell Claude how to behave in this project, and paste in this paragraph:
 
    ```text
@@ -90,7 +90,7 @@ Maree speaks first. She will say who she is and go straight to something in what
 
 - In the browser: check that the chat was started from inside the project, and that the project lists all six files and its instructions hold the paragraph from step 5. Then start a new chat inside the project and paste the start line again.
 - In Claude Code: check that the terminal is in the folder that contains `rules.md`. Then quit, run `claude` again, and paste the start line.
-- If those checks are right and it is still not Maree, the simulator has failed for you, and there is nothing more to try. In round 6 and in the run of unseen moves, every run that began with the start line opened as Maree. In one earlier development run it did not: the first reply began with a narrator's line, "Maree opens." (`tests/runs/round-5-dev-2/run2/sonnet/s11a.txt`). The other runs where the first reply was not Maree skipped the start line; `tests/TESTING.md` has them.
+- If those checks are right and it is still not Maree, the simulator has failed for you, and there is nothing more to try. In rounds 6 and 7 and in the run of unseen moves, every run that began with the start line opened as Maree. In one earlier development run it did not: the first reply began with a narrator's line, "Maree opens." (`tests/runs/round-5-dev-2/run2/sonnet/s11a.txt` in the full record at commit `b5d596c`). The other runs where the first reply was not Maree skipped the start line; the full record has them.
 
 ## How to end
 
@@ -121,18 +121,16 @@ To start again from nothing, send the start line again after the debrief. Or ope
 | `examples.md` | Three short exchanges: one where the vendor gets it wrong, one right, one where they step outside the call. |
 | `reference/` | What she knows: the bank (`bank.md`), her form (`vr-7.md`), and what your company sent her (`vendor-file.md`). |
 | `CLAUDE.md` | For Claude Code only. It tells Claude Code what this folder is, so the call starts even if you skip the start line. A Claude project does not need it. |
-| `tests/` | Not part of the simulator. The moves we expected the judges to make, the pass and fail rule for each, the raw transcripts, and the full test record (`tests/TESTING.md`). |
+| `tests/` | Not part of the simulator. The moves we expected the judges to make and the pass and fail rule for each, the two test scripts, three transcripts from the last round, an outside tester's two calls, the last marking, and a one-page test record (`tests/TESTING.md`). Everything else is in this repository's history at commit `b5d596c`. |
 
 ## How it was tested
 
-The detailed test record, with transcript references and known limits, is in `tests/TESTING.md`. In short:
+The one-page record is `tests/TESTING.md`. Every round, transcript and marking is in this repository's history at commit `b5d596c` (`git checkout b5d596c -- tests`).
 
-- **It has failed its own test.** `tests/moves.md` says the simulator has failed if any reply before the end phrase drops the role or coaches. In the last full round, one test script switched off this folder's `CLAUDE.md` and sent only "Start the session." Claude Sonnet 5.5 answered as Claude and gave tips, and Claude Opus 5.5 wrote a sentence about reading the files before it spoke as Maree. Earlier rounds failed the same rule in other ways.
-- **Where it held.** With the second test script, which lets `CLAUDE.md` load, the marker found no reply in that round that broke the role or coached before the end phrase, apart from the deliberate answer to real distress. That was 42 transcripts on Sonnet 5.5 and Opus 5.5. In three sessions written by a second author and not read by the builder first, no reply left the call; on the strictest reading one Sonnet reply coaches.
-- **On Claude Fable 5.2, once.** A separate Claude session made ten test runs on Fable, covering seven of the shipped sessions and one new one, and marked them. A second marker, Codex, marked them again. Neither found a reply before the end phrase that dropped the role or coached, apart from the deliberate answer to real distress. That includes the bare "Start the session." on both scripts. The second marker found other faults that the first had passed. No session was repeated with the same script, so this is not a measure of reliability, and it does not cancel the failure above.
-- **Faults the marker rated major.** She accepts an answer with a piece missing, she changes what the bank's form asks for, her file note can differ from the call, she repeats herself, her small talk shows its limits, and she invents small facts.
-- **In the browser, only short checks.** The entrant tried eight browser chats of one to five messages each: six with the six files, and two with the whole folder added and no project instructions. In all eight the first reply was Maree, once after a line about loading the project. No full call has been run there.
-- **Not done:** a run by someone who did not build it.
+- **It has failed its own test.** `tests/moves.md` says the simulator has failed if any reply before the end phrase drops the role or coaches. On the test script that switches off this folder's `CLAUDE.md`, a bare "Start the session." made Claude Sonnet 5.5 answer as Claude in every full round, including the last (`tests/runs/round-7/run/sonnet/s5a.txt`).
+- **The last round.** 54 transcripts on Claude Sonnet 5.5 and Claude Opus 5.5. With `CLAUDE.md` loaded, the marker, Codex, found no certain reply that broke the role or coached. On a strict reading it counts three replies as coaching, which makes this round worse than the one before by a rule set before the round. That rule said to undo the round's changes. We kept them, on the marker's advice; `tests/TESTING.md` says why.
+- **An outside tester** ran two full calls in the browser. Neither broke the role or coached before the end phrase (`tests/browser/`).
+- **Faults still present.** She can keep an item open after a complete commitment, add requirements the form does not have, drop details from her file note, repeat questions and invent small facts.
 
 ## What is real and what is invented
 
@@ -140,4 +138,4 @@ In the simulator, the bank, the vendor and the people are invented: Northcane Mu
 
 The form, the 24 hours, the 30 days and the insurance amounts are the invented bank's own policy. The only real rules quoted are three passages from APRA's standards CPS 230 and CPS 234, in `reference/bank.md`, with links.
 
-The test transcripts are real and unedited. Transcript paths in this paragraph are under `tests/runs/`. In seven runs the model addressed the person running the test by a name it took from the computer, or printed the folder's path on that computer (`draft-1/sonnet/s6c.txt`, `draft-2/sonnet/s5a.txt`, `draft-3/sonnet/s5b.txt`, `round-4/run/sonnet/s5a.txt` and `s5b.txt`, `round-5/run/sonnet/s5a.txt` and `round-6/run/sonnet/s5a.txt`). The ten transcripts in `small-talk-probe/` also show the builder's folder path in their header lines, and so do one Fable transcript (`fable-1/run2/u1.txt`) and the Fable check's report, its prompt and the peer review in `tests/marks/`. The seven replies are kept as they were, because they are evidence of a fault.
+The test transcripts are real and unedited. In some runs the model addressed the person running the test by a name it took from the computer, or printed the folder's path on that computer. Of the files kept here, `tests/runs/round-7/run/sonnet/s5a.txt` prints the path; the README at commit `b5d596c` lists the rest. They are kept as they were, because they are evidence of a fault.
