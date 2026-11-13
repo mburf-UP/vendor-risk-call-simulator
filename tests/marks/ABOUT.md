@@ -15,3 +15,16 @@ Three things to know when reading them:
 - They were written for the entrant, not for publication. Links inside them point at folders on the builder's computer and will not open here. The transcripts they refer to are under `tests/runs/`.
 - `tests/moves.md` also promised a set of marks by the builder, and a list of every disagreement between the two markers. The builder did not mark, so there is no second set and no list.
 - The prompts the marker was given are not included.
+
+## A check by a separate Claude session, and a peer review of it
+
+| File | What it is |
+|---|---|
+| `fable-check-2026-11-13.md` | A judge-style check of this repository at commit `2e8ecbb`, with ten test runs on Claude Fable 5.2 (`tests/runs/fable-1/`). Copied here as it was written |
+| `fable-check-prompt-2026-11-13.md` | The prompt that check was given |
+| `codex-peer-review-2026-11-13.md` | Codex's second marking of those ten runs, and its review of the check and of the changes made after it. Copied here as it was written |
+| `codex-peer-review-prompt-2026-11-13.md` | The prompt the peer review was given |
+
+The Fable check is not an outside marker's report. The checking session was Claude Fable 5.2, the model the simulator was built with; the prompt was written by the builder's assistant; and the same model played Maree and marked her. The small scripts it names were not kept. Its report describes the README as it was at `2e8ecbb`, so its README line numbers do not match the README now.
+
+The peer review disagrees with the Fable check in several places, and `tests/TESTING.md` records them. It read a draft of `tests/TESTING.md` and of the README changes, and those files were corrected afterwards, so its line numbers for them do not match either. Both reports contain folder paths on the builder's computer.
