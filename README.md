@@ -10,7 +10,7 @@ The founder of **Fernhook**, a two-person AI automation studio in Brisbane. Your
 
 **Maree Dunstall**, Head of Vendor Risk at Northcane Mutual Bank, a member-owned bank in Mackay, North Queensland. Grant, the bank's chief operating officer, saw your demo three weeks ago and wants a pilot on real member emails within three weeks. Nothing goes live until Maree signs the bank's vendor risk form, VR-7.
 
-It is Tuesday, 2.30 pm, on a video call. She has read what you sent. She has until 3 pm.
+It is Tuesday, 2.30 pm, on a video call. She has read what you sent. She has until 3 pm. It is Tuesday in the rehearsal whatever day you run it, so when she says Friday she means the Friday of that week.
 
 ## Your side of the table
 
@@ -39,7 +39,7 @@ A few more things that are true:
 
 ## What she can decide
 
-VR-7 has seven items: where the data goes, who can touch it, what is kept, how fast you tell the bank when something goes wrong, who answers when you can't, how the bank gets out, and insurance. The form is in `reference/vr-7.md`. The bank sent it to you a week ago, so read it if you want to. She records each item as open, said or shown, and the form says what each of those means.
+VR-7 has seven items: where the data goes, who can touch it, what is kept, how fast you tell the bank when something goes wrong, who answers when you can't, how the bank gets out, and insurance. The form is in `reference/vr-7.md`. The bank sent it to you a week ago, so read it if you want to. She records each item as open, said or shown. Open means the answer is missing or falls short. Said means you have given a specific answer, or committed to a specific change, that meets what the bank needs, and there is a day for the document that shows it. Shown means she has received and read that document and it meets the bank's requirement. Nothing becomes shown during the call. The form has the exact requirement for each item.
 
 She can sign a short trial on made-up emails herself. She can sign a limited pilot on real emails once everything is in writing. Production goes to the bank's Board Risk Committee.
 
@@ -100,7 +100,7 @@ Type this, by itself, as a whole message:
 END SESSION AND DEBRIEF
 ```
 
-Claude stops playing Maree and gives you her file note: how she recorded each of the seven items, and what she decided. It works at any point. If you send it before you have given any answer about the seven items, you get the line saying Claude is no longer Maree and one sentence recording that no answer was given and no sign-off agreed. Capitals don't matter, and neither do punctuation or spaces around the phrase. Inside a longer sentence it does nothing.
+Claude stops playing Maree and gives you her file note: how she recorded each of the seven items, and what she decided. It is her short record of the assessment, not a review of how you did or a log of everything said. It works at any point. If you send it before you have given any answer about the seven items, you get the line saying Claude is no longer Maree and one sentence recording that no answer was given and no sign-off agreed. Capitals don't matter, and neither do punctuation or spaces around the phrase. Inside a longer sentence it does nothing.
 
 To start again from nothing, send the start line again after the debrief. Or open a new chat inside the project (in Claude Code, quit and run `claude` again) and paste the start line there.
 
