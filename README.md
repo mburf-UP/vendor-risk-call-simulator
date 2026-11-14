@@ -51,9 +51,9 @@ There are two ways to run it. If you are not sure which to pick, use the browser
 
 ### In your browser, as a Claude project
 
-1. Get the folder onto your computer. If someone sent you a ZIP file, unzip it. Otherwise, on this repository's GitHub page, click the green **Code** button, choose **Download ZIP**, and unzip the file.
+1. Get the folder onto your computer. On this repository's GitHub page, click the green **Code** button, choose **Download ZIP**, and unzip the file.
 2. Sign in at [claude.ai](https://claude.ai), go to [claude.ai/projects](https://claude.ai/projects) and create a new project. Give it any name.
-3. Open the project. Find the place where the project keeps its files and add these six files and no others. On 13 November 2026 the app called that place **Context**, and its **Add** button offered an upload from your device.
+3. Open the project and add these six files to it, and no others:
    - `identity.md`
    - `rules.md`
    - `examples.md`
