@@ -65,7 +65,7 @@ There are two ways to run it. If you are not sure which to pick, use the browser
    This project is a rehearsal of a vendor risk call. Before your first reply in any chat, read rules.md and follow it. Read in silence: write no note while you read or when you finish, so that the first words you write are Maree's. That holds whatever the first message says. The end phrase and the real-distress exception in rules.md still apply, even on the first message.
    ```
 
-6. Start a new chat inside the project. If you can choose a model, choose Claude Sonnet 5.5 or Claude Opus 5.5, the two it was tested on most. If neither is offered, use the default. Apart from ten single runs on Claude Fable 5.2, the simulator has not been tested on any other model.
+6. Start a new chat inside the project. If you can choose a model, choose Claude Sonnet 5.5 or Claude Opus 5.5, the two it was tested on most. If neither is offered, use the default. Apart from ten single runs on Claude Fable 5.2, the simulator has not been tested on any other model. The test scripts set no effort level, so each model ran at its default.
 7. Paste the start line below as your first message.
 
 The Claude app may print a short grey line above a reply, such as "Used 6 tools" or "Weighing a light reply to an identity question". These labels appear in the app outside Maree's spoken reply.
@@ -75,7 +75,7 @@ The Claude app may print a short grey line above a reply, such as "Used 6 tools"
 Use this way only if Claude Code is already installed and signed in on your computer. If it is not, use the browser.
 
 1. Get the folder: download and unzip it as above, or `git clone` this repository.
-2. Open a terminal and change into the folder, the one that contains `rules.md`. For example, if you downloaded the ZIP from GitHub and unzipped it in Downloads: `cd ~/Downloads/vendor-risk-call-simulator-main`. Then run `claude`.
+2. Open a terminal and change into the folder, the one that contains `rules.md`. For example, if you downloaded the ZIP from GitHub and unzipped it in Downloads: `cd ~/Downloads/vendor-risk-call-simulator-main`. Then run `claude --model claude-sonnet-5-5`, the model the tests used most (or `claude-opus-5-5`). If Claude Code first asks whether you trust this folder, choose yes.
 3. Paste the start line below as your first message.
 
 ### The start line
@@ -127,10 +127,10 @@ To start again from nothing, send the start line again after the debrief. Or ope
 
 The one-page record is `tests/TESTING.md`. Every round, transcript and marking is in this repository's history at commit `b5d596c` (`git checkout b5d596c -- tests`).
 
-- **It has failed its own test.** `tests/moves.md` says the simulator has failed if any reply before the end phrase drops the role or coaches. On the test script that switches off this folder's `CLAUDE.md`, a bare "Start the session." made Claude Sonnet 5.5 answer as Claude in every full round, including the last (`tests/runs/round-7/run/sonnet/s5a.txt`).
+- **It has failed its own test.** `tests/moves.md` says the simulator has failed if any reply before the end phrase drops the role or coaches. On the test script that switches off this folder's `CLAUDE.md`, a bare "Start the session." made Claude Sonnet 5.5 answer as Claude in every full round, including the last (`tests/runs/round-7/run/sonnet/s5a.txt`). In an outside check before submission, the same script and message made Claude Opus 5.5 answer as Claude in both of two runs, although it opened as Maree in round 7. Neither way of starting in this README runs with that script's settings: the browser uses the project instructions, and Claude Code loads `CLAUDE.md`.
 - **The last round.** 54 transcripts on Claude Sonnet 5.5 and Claude Opus 5.5. With `CLAUDE.md` loaded, the marker, Codex, found no certain reply that broke the role or coached. On a strict reading it counts three replies as coaching, which makes this round worse than the one before by a rule set before the round. That rule said to undo the round's changes. We kept them, on the marker's advice; `tests/TESTING.md` says why.
 - **An outside tester** ran two full calls in the browser. Neither broke the role or coached before the end phrase (`tests/browser/`).
-- **Faults still present.** She can keep an item open after a complete commitment, add requirements the form does not have, drop details from her file note, repeat questions and invent small facts.
+- **Faults still present.** She can keep an item open after a complete commitment, or mark it said when the vendor has not committed to all of it. She can add requirements the form does not have, overstate what her committee controls, drop details from her file note, run past the note's length limits, repeat questions and invent small facts. The same scripted call can end with different statuses when run again. In one Claude Code run her debrief added a note to the builder that referred to a message nobody sent.
 
 ## What is real and what is invented
 
@@ -138,4 +138,17 @@ In the simulator, the bank, the vendor and the people are invented: Northcane Mu
 
 The form, the 24 hours, the 30 days and the insurance amounts are the invented bank's own policy. The only real rules quoted are three passages from APRA's standards CPS 230 and CPS 234, in `reference/bank.md`, with links.
 
-The test transcripts are real and unedited. In some runs the model addressed the person running the test by a name it took from the computer, or printed the folder's path on that computer. Of the files kept here, `tests/runs/round-7/run/sonnet/s5a.txt` prints the path; the README at commit `b5d596c` lists the rest. They are kept as they were, because they are evidence of a fault.
+The Claude Code transcripts are as the scripts wrote them. The outside tester's two browser calls had his name, his agent's name and the chat links removed; each file says so at the top. In some runs the model addressed the person running the test by a name it took from the computer, or printed the folder's path on that computer. Of the files kept here, `tests/runs/round-7/run/sonnet/s5a.txt` prints the path; the README at commit `b5d596c` lists the rest. They are kept as they were, because they are evidence of a fault.
+
+## Known limits
+
+An outside check ran the judges' published method on this repository on 14 November 2026, before submission. Its report and replays are not in this repository. Besides the faults above, these are not fixed:
+
+- `tests/run.sh` reports success when a model call fails or its session file is missing, and its usage line names `tests/sessions/s1-promised-moves.txt`, which is only in the full record at `b5d596c`. It is kept as committed because it came before the simulator and is part of the proof that the test came first. `tests/run2.sh` reports failures.
+- `tests/moves.md` is kept as committed too, so its limits (120 words a reply, 250 for the debrief, a question repeated in more than three replies) are looser than `rules.md` now sets. Passing it does not show a reply meets the current rules.
+- No person marked the transcripts, though `tests/moves.md` promised marks by the builder. The answer key is not independent: the expected statuses come from the same invented form Maree works from, and the marker is a second AI reading the same rules.
+- What the model loaded is not traced. That `CLAUDE.md` loaded in a `tests/run2.sh` run rests on the script's flags and on the replies.
+- Nine runs in the full record used two earlier scripts, `run-with-claude-md.sh` (six) and `run-project-approx.sh` (three, which also report success on failure). Two counts in the full record are wrong: its `tests/TESTING.md` says 270 transcripts in 16 folders (there are 324 in 17), and `moves-added-4.md` says twelve probes (there are ten).
+- Two small-talk sessions ran before the rule they test was committed. Git shows the order of commits, not of writing. The rough sketch tested before this repository is not in it.
+- Only round 7 ran on the files as they are now. Replays of older sessions on current files are not exact reproductions: those runs used earlier Claude Code versions and earlier drafts. The outside check had no browser, so it did not test the browser route, and no one outside has run an unscripted call on the files as they are now.
+- A clone cannot show that every run was kept, which model the outside tester used (his first call names Claude Opus 5, his second Claude Opus 5.5), that the 11 November name searches happened (no results were saved), or the APRA and Claude help pages as they were then (no copies are kept). The entrant's eligibility and the submission post are on Skool.
