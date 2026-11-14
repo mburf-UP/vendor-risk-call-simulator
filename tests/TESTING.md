@@ -16,7 +16,7 @@ This page is the short version. The full record is every round, every transcript
 - **A rule we set and did not follow.** Before round 7 the entrant fixed a rule: round 7 is worse than round 6 if any such reply fails where round 6 did not, and a worse round 7 means undoing round 7's changes. On the strict reading, round 7 is worse. The marker said none of the three was caused by the changes and advised against undoing them, and the changes fixed faults it confirmed (the exit item on both models, and the insurance exception for a pilot). The entrant kept them. That departs from the rule set before the round. Round 6's simulator files are at commit `942b2bd` (`git checkout 942b2bd -- identity.md rules.md examples.md reference/`).
 - **Faults still present**, as the marker rates them major: she keeps an item open when a complete commitment was made, or says an answer is missing when it was given; she adds deadlines and signatures the form does not ask for; her file note drops questions, days and conditions; she repeats questions; she invents small facts, such as "it's on in our house" about the football.
 
-- **Before submission**, an outside check (14 November 2026) replayed round 7's sessions twice each on the current files. It found the failure above on Opus too, in both runs; one status upgraded to said without a full commitment; a debrief note to the builder about a message nobody sent; statuses that differ between repeats; and file notes over their length limit. Its report is not in this repository; the README's "Known limits" lists what it found.
+- **Before submission**, two outside checks (14 November 2026) replayed round 7's sessions twice each on the current files. The first found the failure above on Opus too, in both runs; one status upgraded to said without a full commitment; a debrief note to the builder about a message nobody sent; statuses that differ between repeats; and file notes over their length limit. The second found the same kinds of fault, plus a question asked three times and an empty reply. Their reports are not in this repository; the README's "Known limits" lists what they found.
 
 ## An outside tester
 
@@ -28,4 +28,4 @@ The plan (`moves.md`), the two scripts, two session files and three round 7 tran
 
 ## Not checked or not done
 
-A stranger cannot check that every run was kept, that the builder had not read the second author's sessions, or which model the outside tester used. No person typed a Claude Code session, no run used another computer, and no one outside has tried the files as they are now.
+A stranger cannot check that every run was kept, that the builder had not read the second author's sessions, or which model the outside tester used. No person typed a Claude Code session, no run used another computer, and no one outside has made an unscripted call on the files as they are now; the outside checks replayed scripted sessions.
